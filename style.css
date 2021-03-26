@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+}
+
+
+
+p{
+    margin-top: 0;
+}
+
+
+#topDiv{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://wallpapercave.com/wp/wp2729921.gif") ;
+    background-size: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#firstDiv{
+    
+    width: 45vw;
+    height: 50vh!important;
+    color: rgb(255, 255, 255);
+    border-radius: 18px;
+    text-align: center;
+    /* display: block; */
+    background-color: rgba(255, 255, 255, 0.205);
+    padding: 8px;
+    margin-bottom: 5vh;
+    
+}
+
+
+#intro{
+    margin-top: 10vh;
+}
+
+
+#list{
+    margin-top: 10vh;
+    text-align: center;
+}
+
