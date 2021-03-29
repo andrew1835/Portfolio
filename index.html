@@ -9,6 +9,10 @@
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
 <body>
     <div id="topDiv">
@@ -22,7 +26,9 @@
 
             <div id="list">
 
-                <h2>About Me</h2>
+                <a href="#navBar" class="topLinks">
+                    <h2>About Me</h2>
+                </a>
 
                 <h2>Portfolio</h2>
 
@@ -33,7 +39,50 @@
         <!-- <img src="https://github.com/andrew1835/Responsive_Portfolio_1/blob/main/Assets/Images/LinkedinProfile.JPG?raw=true"
             alt="Picture of me" id="profilePicture"></img> -->
     </div>
-    <p>asdf</p>
+
+    <div id="navBar">
+        <a href="#topDiv" class="navBarButtons">
+            <h3 class="navButton" id="homeButton">Home</h3>
+        </a>
+        <a href="#navBar" class="navBarButtons">
+            <h3 class="navButton notMain">About Me</h3>
+        </a>
+        <h3 class="navButton notMain">Portfolio</h3>
+        <h3 class="navButton notMain">Contact</h3>
+    </div>
+
+    <div id="aboutMe">
+        <h2 id="aboutMeTitle">About Me</h2>
+        <div id="leftAbout">
+            <div>
+                <img src="./images/LinkedinProfile.JPG" alt="profile picture" id="profilePicture">
+            </div>
+            <div id="descriptionOfMe">
+                <h3>About Me</h3>
+                <p>Front-end software engineer utilizing background in marketing and writing to find creative solutions
+                    to user-facing problems. Recently earned my certificate in full stack development from the
+                    University of Washington. Skilled at <span class="boldWords">user-friendly,</span> engaging,
+                    responsive design.
+                    Graduated in
+                    2020 with interdisciplinary honors from the University of Washington with a bachelor’s degree in
+                    marketing and an English minor. I have a diverse background of work/academic experiences, and across
+                    all these experiences I have been known as an effective problem solver with strengths in critical
+                    thinking, creativity, and teamwork. I’m excited to leverage my passion and skill set to help achieve
+                    company goals and find success as a front-end software engineer. </p>
+            </div>
+        </div>
+
+        <div id="rightAbout">
+            <div>
+                <h3>Skills</h3>
+            </div>
+            <div>
+                <h3>Achievements Pre-coding</h3>
+            </div>
+        </div>
+
+    </div>
+
 
 
 
