@@ -30,7 +30,6 @@ a{
 
 
 #firstDiv{
-    
     width: 45vw;
     height: 50vh!important;
     color: rgb(255, 255, 255);
@@ -49,18 +48,20 @@ a{
 
 
 #list{
-    margin-top: 10vh;
+    margin-top: 5vh;
     text-align: center;
-    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
 }
 
-
-
-.navButton{
-    display: inline;
-    color: white;
+.listItems{
+    border: 1px solid;
+    width: 10vw;
+    margin-top: 0!important;
+    margin-bottom: 0vh!important;
 }
-
 
 #navBar{
     padding: 1vw;
@@ -68,6 +69,19 @@ a{
     background-color: rgb(59, 59, 59);
     
 }
+
+.navbar-fixed{
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+.navButton{
+    display: inline;
+    color: white;
+}
+
 
 #homeButton{
     margin-left: 8.8vw;
@@ -77,20 +91,21 @@ a{
     margin-left: 3.5vw;
 }
 
+.sectionTitles{
+    text-decoration: underline;
+}
+
 #aboutMe{
-    margin-top: 10vh;
-    font-family: 'Noto Sans JP', sans-serif;
-    
+    margin-top: 7vh;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    overflow: auto; 
+    /* overflow auto makes the height of the parent div change so that it grows with the height of its children */
+    margin-bottom: 10vh;
 }
 
 #aboutMeTitle{
     text-align: center;
     margin-bottom: 10vh;
-}
-
-#profilePicture{
-    max-width: 25vw;
-    border-radius: 118px;
 }
 
 #leftAbout{
@@ -100,6 +115,21 @@ a{
     text-align: center;
 }
 
+#profilePicture{
+    max-width: 28vw;
+    border-radius: 118px;
+}
+
+#descriptionOfMe{
+    
+    line-height: 1.5;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+
+
 #rightAbout{
     float: right;
     margin-right: 10%;
@@ -107,11 +137,32 @@ a{
     text-align: center;
 }
 
-#descriptionOfMe{
-    margin-top: 5vh;
-}
-
 .boldWords{
     font-weight: bold;
+    text-decoration: underline;
 }
 
+#portfolio{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    overflow: auto;  
+    background-color: rgba(228, 228, 228, 0.685);
+}
+
+#portfolioTitle{
+    text-align: center;
+    margin-top: 7vh;
+    margin-bottom: 10vh;
+}
+
+#contact{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    overflow: auto; 
+    color: white; 
+    background-color: rgb(36, 36, 36);
+}
+
+#contactTitle{
+    text-align: center;
+    margin-top: 7vh;
+    margin-bottom: 10vh;
+}

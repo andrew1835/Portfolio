@@ -5,89 +5,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Anthony</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+
 
 <body>
-    <div id="topDiv">
-        <div id="firstDiv">
+    <div id="content">
 
-            <div id="intro">
+        <div id="topDiv">
+            <div id="firstDiv">
 
-                <h1>Hey, my name is Andrew and I'm a front-end web developer. Click below to learn more about me</h1>
+                <div id="intro">
 
+                    <h1>Hey, my name is Andrew and I'm a front-end web developer. Click below to learn more about me
+                    </h1>
+
+                </div>
+
+                <div id="list">
+
+                    <a href="#navBar">
+                        <h2 class="listItems">About</h2>
+                    </a>
+                    <br>
+                    <a href="#portfolio">
+                        <h2 class="listItems">Portfolio</h2>
+                    </a>
+                    <br>
+                    <a href="#contact">
+                        <h2 class="listItems">Contact</h2>
+                    </a>
+
+                </div>
             </div>
-
-            <div id="list">
-
-                <a href="#navBar" class="topLinks">
-                    <h2>About Me</h2>
-                </a>
-
-                <h2>Portfolio</h2>
-
-                <h2>Contact</h2>
-
-            </div>
-        </div>
-        <!-- <img src="https://github.com/andrew1835/Responsive_Portfolio_1/blob/main/Assets/Images/LinkedinProfile.JPG?raw=true"
+            <!-- <img src="https://github.com/andrew1835/Responsive_Portfolio_1/blob/main/Assets/Images/LinkedinProfile.JPG?raw=true"
             alt="Picture of me" id="profilePicture"></img> -->
-    </div>
-
-    <div id="navBar">
-        <a href="#topDiv" class="navBarButtons">
-            <h3 class="navButton" id="homeButton">Home</h3>
-        </a>
-        <a href="#navBar" class="navBarButtons">
-            <h3 class="navButton notMain">About Me</h3>
-        </a>
-        <h3 class="navButton notMain">Portfolio</h3>
-        <h3 class="navButton notMain">Contact</h3>
-    </div>
-
-    <div id="aboutMe">
-        <h2 id="aboutMeTitle">About Me</h2>
-        <div id="leftAbout">
-            <div>
-                <img src="./images/LinkedinProfile.JPG" alt="profile picture" id="profilePicture">
-            </div>
-            <div id="descriptionOfMe">
-                <h3>About Me</h3>
-                <p>Front-end software engineer utilizing background in marketing and writing to find creative solutions
-                    to user-facing problems. Recently earned my certificate in full stack development from the
-                    University of Washington. Skilled at <span class="boldWords">user-friendly,</span> engaging,
-                    responsive design.
-                    Graduated in
-                    2020 with interdisciplinary honors from the University of Washington with a bachelor’s degree in
-                    marketing and an English minor. I have a diverse background of work/academic experiences, and across
-                    all these experiences I have been known as an effective problem solver with strengths in critical
-                    thinking, creativity, and teamwork. I’m excited to leverage my passion and skill set to help achieve
-                    company goals and find success as a front-end software engineer. </p>
-            </div>
         </div>
 
-        <div id="rightAbout">
-            <div>
-                <h3>Skills</h3>
-            </div>
-            <div>
-                <h3>Achievements Pre-coding</h3>
-            </div>
+        <div id="navBar">
+            <a href="#topDiv">
+                <h3 class="navButton" id="homeButton">Home</h3>
+            </a>
+            <a href="#navBar">
+                <h3 class="navButton notMain">About</h3>
+            </a>
+            <a href="#portfolio">
+                <h3 class="navButton notMain">Portfolio</h3>
+            </a>
+            <a href="#contact">
+                <h3 class="navButton notMain">Contact</h3>
+            </a>
         </div>
 
+
+
+        <div id="aboutMe">
+            <h1 class="sectionTitles" id="aboutMeTitle">About</h1>
+            <div id="leftAbout">
+                <div>
+                    <img src="./images/LinkedinProfile.JPG" alt="profile picture" id="profilePicture">
+                </div>
+                <div id="descriptionOfMe">
+                    <h2>About Me</h2>
+                    <p>Front-end software engineer utilizing background in marketing and writing to find creative
+                        solutions
+                        to user-facing problems. Recently earned my certificate in full stack development from the
+                        University of Washington. Skilled at <span class="boldWords">user-friendly</span>, <span
+                            class="boldWords">engaging</span>,
+                        <span class="boldWords">responsive design</span>.
+                        Graduated in
+                        2020 with interdisciplinary honors from the University of Washington with a bachelor’s degree in
+                        marketing and an English minor. I have a diverse background of work/academic experiences, and
+                        across
+                        all these experiences I have been known as an effective problem solver with strengths in
+                        critical
+                        thinking, creativity, and teamwork. I’m excited to leverage my passion and skill set to help
+                        achieve
+                        company goals and find success as a front-end software engineer.
+                    </p>
+                </div>
+            </div>
+
+            <div id="rightAbout">
+                <div>
+                    <h2>Skills</h2>
+                </div>
+                <div>
+                    <h2>Achievements Pre-coding</h2>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="portfolio">
+            <h1 class="sectionTitles" id="portfolioTitle">Portfolio</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, enim tempore corporis voluptas minima
+                eveniet quae mollitia eum repellat tenetur, inventore sint quisquam ad beatae asperiores ullam
+                consequuntur sunt vel.</p>
+        </div>
+
+        <div id="contact">
+            <h1 class="sectionTitles" id="contactTitle">Contact</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, enim tempore corporis voluptas minima
+                eveniet quae mollitia eum repellat tenetur, inventore sint quisquam ad beatae asperiores ullam
+                consequuntur sunt vel.</p>
+        </div>
+
+
+
+
+
     </div>
-
-
-
-
-
-
     <script src="script.js"></script>
 </body>
 
