@@ -139,16 +139,15 @@ a{
     text-align: center;
 }
 
-.skillList{
-    
-}
+
 
 .skillItem{
     display: flex;
-    /* justify-content: left!important; */
+    justify-content: flex-end;
     align-items: center;
-    right: 0;
     margin-bottom: 1vh;
+    width: 100%;
+    
 }
 
 .skill{
