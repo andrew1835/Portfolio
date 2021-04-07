@@ -52,7 +52,9 @@ a{
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+    /* flex-direction stacks the items on top of each other. For some reason align-items is centering them horizontally and justify-content isn't doing anything. You've left justify-content in incase it's a bug */
    
 }
 
@@ -135,6 +137,49 @@ a{
     margin-right: 10%;
     width: 40%;
     text-align: center;
+}
+
+.skillList{
+    
+}
+
+.skillItem{
+    display: flex;
+    /* justify-content: left!important; */
+    align-items: center;
+    right: 0;
+    margin-bottom: 1vh;
+}
+
+.skill{
+    margin-right: 1vw;
+}
+
+.skillBar{
+    width: 520px;
+    height: 4.5vh;
+    background-color: rgba(0, 132, 255, 0.979);
+    border-radius: 50px 0 0 50px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.skillLevel{
+    width: 130px;
+    height: 4.5vh;
+    background-color: white;
+    border-radius: 0 50px 50px 0;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillNumber{
+    /* font-style: italic; */
 }
 
 .boldWords{
