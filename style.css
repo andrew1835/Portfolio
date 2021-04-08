@@ -17,6 +17,10 @@ a{
     text-decoration: none;
 }
 
+li{
+    list-style-position: inside;
+}
+
 
 #topDiv{
     width: 100%;
@@ -98,7 +102,6 @@ a{
 }
 
 #aboutMe{
-    margin-top: 7vh;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     overflow: auto; 
     /* overflow auto makes the height of the parent div change so that it grows with the height of its children */
@@ -106,19 +109,21 @@ a{
 }
 
 #aboutMeTitle{
+    margin-top: 7vh;
     text-align: center;
-    margin-bottom: 10vh;
+    margin-bottom: 7vh;
 }
 
 #leftAbout{
     float: left;
     margin-left: 10%;
-    width: 40%;
+    margin-right: 3%;
+    width: 37%;
     text-align: center;
 }
 
 #profilePicture{
-    max-width: 28vw;
+    max-width: 25vw;
     border-radius: 118px;
 }
 
@@ -130,16 +135,6 @@ a{
     margin: 0 auto;
     margin-top: 5vh;
 }
-
-
-#rightAbout{
-    float: right;
-    margin-right: 10%;
-    width: 40%;
-    text-align: center;
-}
-
-
 
 .skillItem{
     display: flex;
@@ -154,20 +149,20 @@ a{
     margin-right: 1vw;
 }
 
-.skillBar{
-    width: 520px;
+#jsSkillBar{
+    width: 455px;
     height: 4.5vh;
-    background-color: rgba(0, 132, 255, 0.979);
+    background-color:rgba(0, 132, 255, 0.979);
     border-radius: 50px 0 0 50px;
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
 }
 
-.skillLevel{
-    width: 130px;
+#jsSkillLevel{
+    width: 195px;
     height: 4.5vh;
-    background-color: white;
+    background-color: rgb(230, 230, 230);
     border-radius: 0 50px 50px 0;
     border-top: 1px solid black;
     border-right: 1px solid black;
@@ -177,13 +172,117 @@ a{
     align-items: center;
 }
 
-.skillNumber{
-    /* font-style: italic; */
+#htmlSkillBar{
+    width: 520px;
+    height: 4.5vh;
+    background-color: rgba(0, 132, 255, 0.979);
+    border-radius: 50px 0 0 50px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#htmlSkillLevel{
+    width: 130px;
+    height: 4.5vh;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0 50px 50px 0;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cssSkillBar{
+    width: 520px;
+    height: 4.5vh;
+    background-color: rgba(0, 132, 255, 0.979);
+    border-radius: 50px 0 0 50px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#cssSkillLevel{
+    width: 130px;
+    height: 4.5vh;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0 50px 50px 0;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reactSkillBar{
+    width: 390px;
+    height: 4.5vh;
+    background-color: rgba(0, 132, 255, 0.979);
+    border-radius: 50px 0 0 50px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#reactSkillLevel{
+    width: 260px;
+    height: 4.5vh;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0 50px 50px 0;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nodeSkillBar{
+    width: 325px;
+    height: 4.5vh;
+    background-color: rgba(0, 132, 255, 0.979);
+    border-radius: 50px 0 0 50px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#nodeSkillLevel{
+    width: 325px;
+    height: 4.5vh;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0 50px 50px 0;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boldWords{
     font-weight: bold;
     text-decoration: underline;
+}
+
+#rightAbout{
+    float: right;
+    margin-right: 10%;
+    margin-left: 3%;
+    width: 37%;
+    text-align: center;
+}
+
+#achievements{
+    text-align: left;
+    
+    background-color: lavender;
+    
+
 }
 
 #portfolio{
@@ -192,10 +291,15 @@ a{
     background-color: rgba(228, 228, 228, 0.685);
 }
 
+#portfolioContainer{
+    width: 80%;
+    margin: 0 auto;
+}
+
 #portfolioTitle{
     text-align: center;
     margin-top: 7vh;
-    margin-bottom: 10vh;
+    margin-bottom: 7vh;
 }
 
 #contact{
@@ -205,8 +309,13 @@ a{
     background-color: rgb(36, 36, 36);
 }
 
+#contactContainer{
+    width: 80%;
+    margin: 0 auto;
+}
+
 #contactTitle{
     text-align: center;
     margin-top: 7vh;
-    margin-bottom: 10vh;
+    margin-bottom: 7vh;
 }
