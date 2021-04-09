@@ -136,6 +136,19 @@ li{
     margin-top: 5vh;
 }
 
+.boldWords{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#rightAbout{
+    float: right;
+    margin-right: 10%;
+    margin-left: 3%;
+    width: 37%;
+    text-align: center;
+}
+
 .skillItem{
     display: flex;
     justify-content: flex-end;
@@ -150,7 +163,7 @@ li{
 }
 
 #jsSkillBar{
-    width: 455px;
+    width: 21vw;
     height: 4.5vh;
     background-color:rgba(0, 132, 255, 0.979);
     border-radius: 50px 0 0 50px;
@@ -160,7 +173,7 @@ li{
 }
 
 #jsSkillLevel{
-    width: 195px;
+    width: 9vw;
     height: 4.5vh;
     background-color: rgb(230, 230, 230);
     border-radius: 0 50px 50px 0;
@@ -173,7 +186,7 @@ li{
 }
 
 #htmlSkillBar{
-    width: 520px;
+    width: 24vw;
     height: 4.5vh;
     background-color: rgba(0, 132, 255, 0.979);
     border-radius: 50px 0 0 50px;
@@ -183,7 +196,7 @@ li{
 }
 
 #htmlSkillLevel{
-    width: 130px;
+    width: 6vw;
     height: 4.5vh;
     background-color: rgb(230, 230, 230);
     border-radius: 0 50px 50px 0;
@@ -196,7 +209,7 @@ li{
 }
 
 #cssSkillBar{
-    width: 520px;
+    width: 24vw;
     height: 4.5vh;
     background-color: rgba(0, 132, 255, 0.979);
     border-radius: 50px 0 0 50px;
@@ -206,7 +219,7 @@ li{
 }
 
 #cssSkillLevel{
-    width: 130px;
+    width: 6vw;
     height: 4.5vh;
     background-color: rgb(230, 230, 230);
     border-radius: 0 50px 50px 0;
@@ -219,7 +232,7 @@ li{
 }
 
 #reactSkillBar{
-    width: 390px;
+    width: 18vw;
     height: 4.5vh;
     background-color: rgba(0, 132, 255, 0.979);
     border-radius: 50px 0 0 50px;
@@ -229,7 +242,7 @@ li{
 }
 
 #reactSkillLevel{
-    width: 260px;
+    width: 12vw;
     height: 4.5vh;
     background-color: rgb(230, 230, 230);
     border-radius: 0 50px 50px 0;
@@ -242,7 +255,7 @@ li{
 }
 
 #nodeSkillBar{
-    width: 325px;
+    width: 15vw;
     height: 4.5vh;
     background-color: rgba(0, 132, 255, 0.979);
     border-radius: 50px 0 0 50px;
@@ -252,7 +265,7 @@ li{
 }
 
 #nodeSkillLevel{
-    width: 325px;
+    width: 15vw;
     height: 4.5vh;
     background-color: rgb(230, 230, 230);
     border-radius: 0 50px 50px 0;
@@ -264,25 +277,62 @@ li{
     align-items: center;
 }
 
-.boldWords{
-    font-weight: bold;
-    text-decoration: underline;
+/* #achievementsSection{
+    
+} */
+
+#additionalInfo{
+    margin-bottom: 0;
 }
 
-#rightAbout{
+#rightAboutTwo{
     float: right;
-    margin-right: 10%;
-    margin-left: 3%;
-    width: 37%;
+    margin-right: 3%;
+    margin-left: 0%;
+    width: 47%;
     text-align: center;
 }
 
-#achievements{
-    text-align: left;
-    
-    background-color: lavender;
-    
+#achievementsTitle{
+    margin-top: 1.3vh;
+    margin-bottom: 3vh;
+}
 
+#icons{
+    display: flex;
+    justify-content: left;
+    margin-top: 2vh;
+}
+
+/* #achievements{
+    text-align: left;
+    background-color: lavender;
+} */
+
+.iconAndDescription{
+    text-align: center;
+    position: relative
+}
+
+.icon{
+    width: 7vw;
+    height: 110px;
+    margin-right: 3.5vw;
+    word-wrap: break-word;
+    
+}
+
+.iconDescription{
+   width: 9vw;
+   height: 110px;
+}
+
+.iconLast{
+    margin-right: 3vw;
+    width: 7vw;
+    height: 110px;
+    word-wrap: break-word;
+    
 }
 
 #portfolio{
