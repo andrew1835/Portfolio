@@ -352,6 +352,23 @@ li{
     margin-bottom: 7vh;
 }
 
+/* .card{
+    height: 450px;
+    width: 400px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    background-color: rgb(4, 159, 170);
+    cursor: pointer;
+}
+
+.cardModal{
+    height: 700px;
+    width: 700px;
+    margin: 0 auto;
+    background-color: rgb(171, 178, 179);
+    cursor: pointer;
+} */
+
 #contact{
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     overflow: auto; 

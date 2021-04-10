@@ -22,3 +22,59 @@ $(document).ready(function () {
         }
     });
 });
+
+
+
+
+
+
+
+// let count = 0
+// $('.card').click(function () {
+//     //if you hard code, then use console
+//     //.log to determine when you want the 
+//     //nav bar to stick. 
+//     count++
+//     $('.card').addClass('cardModal')
+//     $('.card').removeClass('card')
+//     console.log(count)
+
+
+//     // if ($(window).scrollTop() > $(window).innerHeight()) {
+//     //     $('#navBar').addClass('navbar-fixed');
+//     // }
+//     // if ($(window).scrollTop() < $(window).innerHeight()) {
+//     //     $('#navBar').removeClass('navbar-fixed');
+//     // }
+// });
+
+// $('.cardModal').click(function () {
+//     //if you hard code, then use console
+//     //.log to determine when you want the 
+//     //nav bar to stick. 
+//     count--
+//     $('.cardModal').addClass('card')
+//     $('.cardModal').removeClass('cardModal')
+//     console.log(count)
+
+
+//     // if ($(window).scrollTop() > $(window).innerHeight()) {
+//     //     $('#navBar').addClass('navbar-fixed');
+//     // }
+//     // if ($(window).scrollTop() < $(window).innerHeight()) {
+//     //     $('#navBar').removeClass('navbar-fixed');
+//     // }
+// });
+
+
+
+// $(document).ready(function () {
+
+//     $('.card').click(function () {
+//         if ($('.card').clicked == true) {
+//             $('.card').addClass('cardModal')
+//         }
+
+
+//     });
+// })
