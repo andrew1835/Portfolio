@@ -25,7 +25,10 @@ $(document).ready(function () {
 
 
 
-
+function showModal() {
+    $('#modal1').addClass('modal1Shown');
+    $("#content").addClass('bodyBlur');
+}
 
 
 

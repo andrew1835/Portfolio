@@ -8,6 +8,10 @@ body{
     src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 }
 
+.bodyBlur{
+    filter: blur(3px);
+}
+
 p{
     margin-top: 0;
 }
@@ -352,14 +356,32 @@ li{
     margin-bottom: 7vh;
 }
 
-/* .card{
-    height: 450px;
+.card{
+    width: 400px;
+    margin-bottom: 8%; 
+}
+
+.cardImage{
+    height: 600px;
     width: 400px;
     margin-top: 8%;
     margin-bottom: 8%;
-    background-color: rgb(4, 159, 170);
     cursor: pointer;
 }
+
+.modal1Shown{
+    position: fixed;
+    width: 50%;
+    height: 65vh;
+    margin-left: 25%;
+    margin-top: 10%;
+    background-color: rgb(0, 0, 0);
+    z-index: 101;
+    top: 0;
+    display: block;
+}
+
+
 
 .cardModal{
     height: 700px;
