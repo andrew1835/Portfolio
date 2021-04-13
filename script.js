@@ -7,6 +7,10 @@
 //     hello.style.color = "red"
 // }
 
+var modal = document.getElementById("modal1")
+var modalClose = document.getElementById("modalWindow")
+var close = document.getElementById("xIcon")
+
 $(document).ready(function () {
 
     $(window).scroll(function () {
@@ -23,13 +27,18 @@ $(document).ready(function () {
     });
 });
 
-
-
 function showModal() {
-    $('#modal1').addClass('modal1Shown');
+    document.getElementById("modal1").style.display = "block"
     $("#content").addClass('bodyBlur');
 }
 
+
+window.onclick = function (event) {
+    if (event.target == modal || event.target == close) {
+        modal.style.display = "none"
+        $("#content").removeClass('bodyBlur');
+    }
+}
 
 
 // let count = 0
