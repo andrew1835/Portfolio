@@ -1,3 +1,5 @@
+/*  TODO: TOP LEVEL STYLING */
+
 html {
     scroll-behavior: smooth;
    }
@@ -25,6 +27,11 @@ li{
     list-style-position: inside;
 }
 
+
+
+
+
+/* TODO: HOMESCREEN */
 
 #topDiv{
     width: 100%;
@@ -73,6 +80,12 @@ li{
     margin-bottom: 0vh!important;
 }
 
+
+
+
+
+/* TODO: NAVBAR */
+
 #navBar{
     padding: 1vw;
     padding-right: 0;
@@ -101,15 +114,22 @@ li{
     margin-left: 3.5vw;
 }
 
-.sectionTitles{
-    text-decoration: underline;
-}
+
+
+
+
+
+/* TODO: ABOUT ME SECTION */
 
 #aboutMe{
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     overflow: auto; 
     /* overflow auto makes the height of the parent div change so that it grows with the height of its children */
     margin-bottom: 10vh;
+}
+
+.sectionTitles{
+    text-decoration: underline;
 }
 
 #aboutMeTitle{
@@ -339,6 +359,12 @@ li{
     
 }
 
+
+
+
+
+/* TODO: PORTFOLIO SECTION */
+
 #portfolio{
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     overflow: auto;  
@@ -356,21 +382,36 @@ li{
     margin-bottom: 2vh;
 }
 
+#cardContainer{
+    display: flex;
+}
+
 .card{
-    width: 400px;
+    width: 30%;
     margin-bottom: 8%; 
+    margin-left: 3.3%;
+    box-sizing: border-box;
+}
+.card1{
+    margin-left: 0!important; 
+    box-sizing: border-box;
 }
 
 .cardImage{
     height: 600px;
-    width: 400px;
+    width: 100%;
     margin-top: 8%;
     margin-bottom: 8%;
     cursor: pointer;
+    box-sizing: border-box;
+}
+
+.cardDescription{
+    box-sizing: border-box;
 }
 
 
-#modal1{
+#modal1, #modal2, #modal3{
     overflow: auto;
     display: none;
     position: fixed;
@@ -381,16 +422,6 @@ li{
     left: 0;
 }
 
-#modal2{
-    overflow: auto;
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    top: 0;
-    left: 0;
-}
 
 #modal1Content{
     z-index: 2;
@@ -443,11 +474,10 @@ li{
     margin-top: 0.5%;
 }
 
-.photo{
+.photo, .photo2, .photo3{
     z-index: 100;
     display: none;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
 
 /* .initial{
@@ -466,7 +496,7 @@ li{
     display: none;
 }
 
-.xIcon{
+#xIcon, #xIcon2, #xIcon3 {
     color: white;
     background-color: rgba(44, 44, 44, 0.76);
     margin: 0%;
@@ -480,7 +510,7 @@ li{
     border-radius: 5px;
 }
 
-.xIcon:hover{
+#xIcon:hover, #xIcon2:hover, #xIcon3:hover{
     color: black;
     background-color: rgb(110, 109, 109);
 }
@@ -497,16 +527,16 @@ li{
     cursor: pointer;
 }
 
-#leftArrow:hover, #rightArrow:hover{
+#leftArrow:hover, #rightArrow:hover, #leftArrow2:hover, #rightArrow2:hover, #leftArrow3:hover, #rightArrow3:hover{
     color: rgba(255, 255, 255, 0.863);
     background-color: rgb(43, 43, 43);
 }
 
-#leftArrow{
+#leftArrow, #leftArrow2, #leftArrow3{
     left: 8px;
 }
 
-#rightArrow{
+#rightArrow, #rightArrow2, #rightArrow3{
     right: 8px;
 }
 
@@ -554,6 +584,14 @@ li{
     width: 50%;
     margin-left: 10%;
 }
+
+
+
+
+
+
+
+/* TODO: CONTACT SECTION */
 
 #contact{
     overflow: auto; 
