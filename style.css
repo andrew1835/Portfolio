@@ -372,7 +372,7 @@ li{
 }
 
 #portfolioContainer{
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -389,9 +389,11 @@ li{
 .card{
     width: 30%;
     margin-bottom: 8%; 
-    margin-left: 3.3%;
+    margin-left: 5%;
     box-sizing: border-box;
+    position: relative;
 }
+
 .card1{
     margin-left: 0!important; 
     box-sizing: border-box;
@@ -401,13 +403,34 @@ li{
     height: 600px;
     width: 100%;
     margin-top: 8%;
-    margin-bottom: 8%;
+    margin-bottom: 6%;
     cursor: pointer;
     box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+.cardImage:hover{
+    opacity: 0.2;
+    transition: opacity 0.3s;
 }
 
 .cardDescription{
     box-sizing: border-box;
+}
+
+.learnMore{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 0%;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1;
+    width: 40%;
+    padding: 1%;
+    border-bottom: 1px solid black;;
+
 }
 
 
@@ -435,7 +458,7 @@ li{
     z-index: 101;
     top: 7vh;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.397);
-    overflow-y: scroll;
+    overflow: auto;
 }
 
 #carouselBackground{
