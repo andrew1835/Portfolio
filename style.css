@@ -388,21 +388,29 @@ li{
 
 .card{
     width: 30%;
-    margin-bottom: 8%; 
-    margin-left: 5%;
+    margin-bottom: 4%; 
+    margin-left: 3.3%;
     box-sizing: border-box;
     position: relative;
 }
 
 .card1{
-    margin-left: 0!important; 
+    margin-left: 1.6%!important; 
     box-sizing: border-box;
 }
 
+.cardTitle{
+    text-align: center;
+    margin-bottom: 0;
+}
+
 .cardImage{
-    height: 600px;
+    min-height: 68%;
+    max-height: 83%;
+    /* min-height: 600px;
+    max-height: 700px; */
     width: 100%;
-    margin-top: 8%;
+    margin-top: 2%;
     margin-bottom: 6%;
     cursor: pointer;
     box-sizing: border-box;
@@ -411,8 +419,8 @@ li{
 }
 
 .cardImage:hover{
-    opacity: 0.2;
-    transition: opacity 0.3s;
+    opacity: 0.1;
+    transition: opacity 0.4s;
 }
 
 .cardDescription{
@@ -454,7 +462,7 @@ li{
     width: 60%;
     height: 83vh;
     margin: 0 auto;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(241, 241, 241);
     z-index: 101;
     top: 7vh;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.397);
@@ -573,14 +581,13 @@ li{
     height: 40%;
 }
 
-
-
 .summary{
     width: 33%;
     text-align: center;
     margin-left: 2%;
     margin-right: 1%;
     border: 1px solid rgba(0, 0, 0, 0.671);
+    border-radius: 10px;
     padding: 1%;
     box-sizing: border-box;
 }
@@ -589,6 +596,7 @@ li{
     width: 29%;
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.671);
+    border-radius: 10px;
     padding: 1%;
     box-sizing: border-box;
 }
@@ -599,8 +607,21 @@ li{
     margin-left: 1%;
     margin-right: 2%;
     border: 1px solid rgba(0, 0, 0, 0.671);
+    border-radius: 10px;
     padding: 1%;
     box-sizing: border-box;
+}
+
+.info, .links{
+    text-decoration: underline;
+}
+
+.links{
+    margin-top: 5vh;
+}
+
+.portfolioLinks{
+    color: blue;
 }
 
 #listSection{
