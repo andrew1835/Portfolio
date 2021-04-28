@@ -209,10 +209,8 @@
                 <h1 class="sectionTitles" id="portfolioTitle">Portfolio</h1>
                 <!-- Card for Litzia, Google Library (when it's finished), MemoryBank, This Portfolio itself, NoteTaker, In The Moment -->
 
-                <div id="cardContainer">
+                <div class="cardContainer">
                     <div class="card card1">
-
-                        <!-- TODO: All the card images should be the mobile view version of the site, so that they are all portrait photos as opposed to landscape. You'll have to look up the dimensions of a phone screen to make sure you set the width and height to the correct ratio -->
                         <h2 class="cardTitle">Litzia Storefront</h2>
                         <img src="./images/litziaMobileHome.png" alt="" class="cardImage" onclick="showModal()">
                         <h2 class="learnMore">Learn More</h2>
@@ -239,6 +237,34 @@
                             saves journal entries,
                             photos,
                             and gives a personalzied horrorscope each day by pulling from a zodiac API</p> -->
+                    </div>
+                </div>
+
+
+
+                <!-- TODO: Make these bottom two cards landscape so that they fill up the width better (since there's only two cards instead of 3 and since these sights look much better with landscape view) -->
+
+                <div class="cardContainer2">
+                    <div class="card1Bottom">
+                        <h2 class="cardTitle">NoteTaker</h2>
+                        <img src="./images/noteTaker.png" alt="Note Taker homepage" class="cardImageBottom"
+                            onclick="showModal()">
+                        <h2 class="learnMore">Learn More</h2>
+                        <!-- <p class="cardDescription">Second project. Front-end developer for an online application that
+                            saves journal entries,
+                            photos,
+                            and gives a personalzied horrorscope each day by pulling from a zodiac API</p> -->
+                    </div>
+
+                    <div class="cardBottom">
+                        <h2 class="cardTitle">In The Moment</h2>
+                        <img src="./images/inTheMoment.png"
+                            alt="home page of In The Moment application after looking up events in Seattle on April 27th"
+                            class="cardImageBottom" onclick="showModal2()">
+                        <h2 class="learnMore">Learn More</h2>
+                        <!-- <p class="cardDescription">Front-end developer for an online horoscope/journal application
+                            that saves journal entries/photos and calls on an API to give the user an individualized
+                            daily horoscope</p> -->
                     </div>
                 </div>
 
@@ -497,6 +523,113 @@
 
 
     <div id="modal3">
+        <div id="modal1Content">
+            <div id="carouselBackground"></div>
+            <div id="carousel">
+                <div class="carouselPhotos">
+                    <img src="./images/mbhome.jpg" alt="" class="photo3">
+                    <img src="./images/mbhomebott.jpg" alt="" class="photo3">
+                    <img src="./images/Memorybank.jpg" alt="" class="photo3">
+                </div>
+                <h3 id="xIcon3">✖</h3>
+                <h2 class="arrows" id="leftArrow3">←</h2>
+                <h2 class="arrows" id="rightArrow3">→</h2>
+            </div>
+
+            <div id="modal1Info">
+                <div class="summary">
+                    <h3 class="info">Summary</h3>
+                    <p>Created everything you see on this portfolio from scratch (with the exception of the PHP behind
+                        the email form). Did not use any CSS Frameworks or Libraries, and
+                        did not copy/paste any
+                        functions. I did all the styling, created the modals, the carousels, the navbar, etc., all with
+                        plain HTML, CSS, and JavaScript. A very time-consuming yet educational experience that
+                        challenged me and deepened
+                        my
+                        understanding of
+                        front-end development. </p>
+                </div>
+                <div class="role">
+                    <h3 class="info">Role</h3>
+                    <p>Sole author</p>
+                </div>
+                <div class="languages">
+                    <h3 class="info">Languages/Tools</h3>
+                    <ul id="listSection">
+                        <li class="languageList">HTML</li>
+                        <li class="languageList">CSS</li>
+                        <li class="languageList">JavaScript</li>
+                        <li class="languageList">jQuery</li>
+                        <li class="languageList">Email API (will come back and reference the specific one once you
+                            choose)</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Links: https://github.com/andrew1835/Note_Taker and https://lit-sands-97365.herokuapp.com/  -->
+
+    <div id="modal4">
+        <div id="modal1Content">
+            <div id="carouselBackground"></div>
+            <div id="carousel">
+                <div class="carouselPhotos">
+                    <img src="./images/Memorybank.jpg" alt="whole home page mobile view" class="photo2">
+                    <img src="./images/mbhome.jpg" alt="top of home page" class="photo2">
+                    <img src="./images/mbhomebott.jpg" alt="bottom of home page" class="photo2">
+                    <img src="https://github.com/andrew1835/memoryBank/raw/dev/public/images/memories.png"
+                        alt="history page" class="photo2">
+                </div>
+                <h3 id="xIcon2">✖</h3>
+                <h2 class="arrows" id="leftArrow2">←</h2>
+                <h2 class="arrows" id="rightArrow2">→</h2>
+            </div>
+
+            <div id="modal1Info">
+                <div class="summary">
+                    <h3 class="info">Summary</h3>
+                    <p>Front-end developer for an online horoscope/journal application
+                        that saves journal entries/photos and calls on an API to give the user an individualized
+                        daily horoscope</p>
+                </div>
+                <div class="role">
+                    <h3 class="info">Role</h3>
+                    <p>Front-end developer</p>
+                    <h3 class="links">Links</h3>
+                    <a href="https://memorybank2021.herokuapp.com/" class="portfolioLinks" target="_blank">
+                        <p>Deployed Application</p>
+                    </a>
+                    <a href="https://github.com/andrew1835/memoryBank" class="portfolioLinks" target="_blank">
+                        <p>GitHub repo</p>
+                    </a>
+                </div>
+                <div class="languages">
+                    <h3 class="info">Languages/Tools</h3>
+                    <ul id="listSection">
+                        <li class="languageList">HTML</li>
+                        <li class="languageList">CSS</li>
+                        <li class="languageList">JavaScript</li>
+                        <li class="languageList">Node.js</li>
+                        <li class="languageList">jQuery</li>
+                        <li class="languageList">MySQL</li>
+                        <li class="languageList">Handlebars</li>
+                        <li class="languageList">Cloudinary API</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Links: https://andrew1835.github.io/In_The_Moment/ and https://github.com/andrew1835/In_The_Moment  -->
+
+    <div id="modal5">
         <div id="modal1Content">
             <div id="carouselBackground"></div>
             <div id="carousel">

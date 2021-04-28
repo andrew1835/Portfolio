@@ -367,28 +367,33 @@ li{
 
 #portfolio{
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    overflow: auto;  
+    /* height: fit-content; */
     background-color: rgba(228, 228, 228, 0.685);
 }
 
 #portfolioContainer{
-    width: 75%;
+    width: 78%;
     margin: 0 auto;
 }
 
 #portfolioTitle{
     text-align: center;
-    margin-top: 4vh;
+    padding-top: 5vh;
     margin-bottom: 2vh;
 }
 
-#cardContainer{
+.cardContainer{
     display: flex;
+    height: 100%
+}
+
+.cardContainer2{
+    display: inline-block;
+    width: 100%;
 }
 
 .card{
     width: 30%;
-    margin-bottom: 4%; 
     margin-left: 3.3%;
     box-sizing: border-box;
     position: relative;
@@ -399,26 +404,57 @@ li{
     box-sizing: border-box;
 }
 
+.cardBottom{
+    /* width: 50%;
+    margin-left: 5%; */
+    float: right;
+    box-sizing: border-box;
+    width: 37vw;
+    right: 0;
+    position: relative;
+    /* margin-left: 5%; */
+}
+
+.card1Bottom{
+    /* margin-left: 18%; */
+    /* width: 45%;
+    box-sizing: border-box; */
+    float: left;
+    box-sizing: border-box;
+    width: 37vw;
+    position: relative;
+}
+
 .cardTitle{
     text-align: center;
     margin-bottom: 0;
+    margin-top: 1vh;
 }
 
 .cardImage{
     min-height: 68%;
     max-height: 83%;
-    /* min-height: 600px;
-    max-height: 700px; */
     width: 100%;
     margin-top: 2%;
-    margin-bottom: 6%;
     cursor: pointer;
     box-sizing: border-box;
     position: relative;
     z-index: 2;
 }
 
-.cardImage:hover{
+.cardImageBottom{
+    height: 100%;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    /* display: block; */
+}
+
+.cardImage:hover, .cardImageBottom:hover{
     opacity: 0.1;
     transition: opacity 0.4s;
 }
