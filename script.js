@@ -2,6 +2,8 @@
 var modal = document.getElementById("modal1")
 var modal2 = document.getElementById("modal2")
 var modal3 = document.getElementById("modal3")
+var modal4 = document.getElementById("modal4")
+var modal5 = document.getElementById("modal5")
 var modalClose = document.getElementById("modalWindow")
 var close = document.getElementById("xIcon")
 
@@ -36,6 +38,16 @@ function showModal3() {
     $("#content").addClass('bodyBlur');
 }
 
+function showModal4() {
+    document.getElementById("modal4").style.display = "block"
+    $("#content").addClass('bodyBlur');
+}
+
+function showModal5() {
+    document.getElementById("modal5").style.display = "block"
+    $("#content").addClass('bodyBlur');
+}
+
 
 
 window.addEventListener("click", function close1(event) {
@@ -59,6 +71,22 @@ window.addEventListener("click", function close3(event) {
         $("#content").removeClass('bodyBlur');
     }
 })
+
+window.addEventListener("click", function close4(event) {
+    if (event.target == modal4 || event.target == document.getElementById("xIcon4")) {
+        modal4.style.display = "none"
+        $("#content").removeClass('bodyBlur');
+    }
+})
+
+
+window.addEventListener("click", function close5(event) {
+    if (event.target == modal5 || event.target == document.getElementById("xIcon5")) {
+        modal5.style.display = "none"
+        $("#content").removeClass('bodyBlur');
+    }
+})
+
 
 
 
@@ -222,6 +250,112 @@ window.addEventListener("click", function close3(event) {
     }
 
     choosePhoto3()
+
+
+
+
+
+    // Modal 4
+
+    var leftArrow4 = document.getElementById("leftArrow4")
+    var rightArrow4 = document.getElementById("rightArrow4")
+    var photos4 = document.getElementsByClassName("photo4")
+    var photoLength4 = photos4.length
+    var currentSlide4 = 0
+    console.log("number of photos: " + photoLength4)
+
+
+    rightArrow4.onclick = function goRight() {
+        if (currentSlide4 < photoLength4 - 1) {
+            photos4[currentSlide4].classList.remove("active")
+            currentSlide4++
+            console.log(currentSlide4)
+            choosePhoto4()
+        }
+        else {
+            photos4[currentSlide4].classList.remove("active")
+            currentSlide4 = 0
+            console.log(currentSlide4)
+            choosePhoto4()
+        }
+
+    }
+
+    leftArrow4.onclick = function goLeft() {
+        if (currentSlide4 < 1) {
+            photos4[currentSlide4].classList.remove("active")
+            currentSlide4 = photoLength4 - 1
+            console.log(currentSlide4)
+            choosePhoto4()
+        }
+        else {
+            photos4[currentSlide4].classList.remove("active")
+            currentSlide4--
+            console.log(currentSlide4)
+            choosePhoto4()
+        }
+
+
+    }
+
+    function choosePhoto4() {
+        photos4[currentSlide4].classList.add("active")
+    }
+
+    choosePhoto4()
+
+
+
+
+
+    // Modal 5
+
+    var leftArrow5 = document.getElementById("leftArrow5")
+    var rightArrow5 = document.getElementById("rightArrow5")
+    var photos5 = document.getElementsByClassName("photo5")
+    var photoLength5 = photos5.length
+    var currentSlide5 = 0
+    console.log("number of photos: " + photoLength5)
+
+
+    rightArrow5.onclick = function goRight() {
+        if (currentSlide5 < photoLength5 - 1) {
+            photos5[currentSlide5].classList.remove("active")
+            currentSlide5++
+            console.log(currentSlide5)
+            choosePhoto5()
+        }
+        else {
+            photos5[currentSlide5].classList.remove("active")
+            currentSlide5 = 0
+            console.log(currentSlide5)
+            choosePhoto5()
+        }
+
+    }
+
+    leftArrow5.onclick = function goLeft() {
+        if (currentSlide5 < 1) {
+            photos5[currentSlide5].classList.remove("active")
+            currentSlide5 = photoLength5 - 1
+            console.log(currentSlide5)
+            choosePhoto5()
+        }
+        else {
+            photos5[currentSlide5].classList.remove("active")
+            currentSlide5--
+            console.log(currentSlide5)
+            choosePhoto5()
+        }
+
+
+    }
+
+    function choosePhoto5() {
+        photos5[currentSlide5].classList.add("active")
+    }
+
+    choosePhoto5()
 
 
 

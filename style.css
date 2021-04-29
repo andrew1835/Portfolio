@@ -410,7 +410,7 @@ li{
     float: right;
     box-sizing: border-box;
     width: 37vw;
-    right: 0;
+    /* right: 0; */
     position: relative;
     /* margin-left: 5%; */
 }
@@ -478,7 +478,7 @@ li{
 }
 
 
-#modal1, #modal2, #modal3{
+#modal1, #modal2, #modal3, #modal4, #modal5{
     overflow: auto;
     display: none;
     position: fixed;
@@ -541,7 +541,7 @@ li{
     margin-top: 0.5%;
 }
 
-.photo, .photo2, .photo3{
+.photo, .photo2, .photo3, .photo4, .photo5{
     z-index: 100;
     display: none;
     box-sizing: border-box;  
@@ -563,7 +563,7 @@ li{
     display: none;
 }
 
-#xIcon, #xIcon2, #xIcon3 {
+#xIcon, #xIcon2, #xIcon3, #xIcon4, #xIcon5 {
     color: white;
     background-color: rgba(44, 44, 44, 0.76);
     margin: 0%;
@@ -577,7 +577,7 @@ li{
     border-radius: 5px;
 }
 
-#xIcon:hover, #xIcon2:hover, #xIcon3:hover{
+#xIcon:hover, #xIcon2:hover, #xIcon3:hover, #xIcon4:hover, #xIcon5:hover{
     color: black;
     background-color: rgb(110, 109, 109);
 }
@@ -594,16 +594,16 @@ li{
     cursor: pointer;
 }
 
-#leftArrow:hover, #rightArrow:hover, #leftArrow2:hover, #rightArrow2:hover, #leftArrow3:hover, #rightArrow3:hover{
+#leftArrow:hover, #rightArrow:hover, #leftArrow2:hover, #rightArrow2:hover, #leftArrow3:hover, #rightArrow3:hover, #leftArrow4:hover, #rightArrow4:hover #leftArrow5:hover, #rightArrow5:hover{
     color: rgba(255, 255, 255, 0.863);
     background-color: rgb(43, 43, 43);
 }
 
-#leftArrow, #leftArrow2, #leftArrow3{
+#leftArrow, #leftArrow2, #leftArrow3, #leftArrow4, #leftArrow5{
     left: 8px;
 }
 
-#rightArrow, #rightArrow2, #rightArrow3{
+#rightArrow, #rightArrow2, #rightArrow3, #rightArrow4, #rightArrow5{
     right: 8px;
 }
 
