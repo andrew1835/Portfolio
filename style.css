@@ -87,10 +87,10 @@ li{
 /* TODO: NAVBAR */
 
 #navBar{
-    padding: 1vw;
-    padding-right: 0;
     background-color: rgb(59, 59, 59);
-    
+    display: flex;
+    align-items: center;
+    height: 7.6vh;
 }
 
 .navbar-fixed{
@@ -103,6 +103,13 @@ li{
 .navButton{
     display: inline;
     color: white;
+    transition: 0.2s;
+    padding: 2.2vh;
+    border-radius: 20%;
+}
+
+.navButton:hover{
+    background-color: rgb(36, 36, 36);
 }
 
 
@@ -113,6 +120,55 @@ li{
 .notMain{
     margin-left: 3.5vw;
 }
+
+/* #gitHubRef{
+    height: fit-content;
+    background-color: salmon;
+} */
+
+.resume{
+    margin-left: 1.3vw;
+    border-radius: 10%;
+    padding: 1.2vh;
+}
+
+.resume:hover{
+    background-color: green;
+}
+
+#ghIcon{
+   height: 5vh;
+   width: 5vh;
+   right: 0;
+   background: white;
+   background-size: 10px;
+   border-radius: 20%;
+   transition: 0.3s;
+   display: block;
+   padding: 0.5vh;
+   margin-left: 36vw;
+}
+
+#ghIcon:hover{
+    background-color:rgba(0, 132, 255, 0.979);
+}
+
+#linkedInIcon{
+    height: 5vh;
+    width: 5vh;
+    right: 0;
+    background: white;
+    background-size: 10px;
+    border-radius: 20%;
+    transition: 0.3s;
+    display: block;
+    padding: 0.5vh;
+    margin-left: 2vw;
+ }
+ 
+ #linkedInIcon:hover{
+     background-color:rgba(255, 60, 0, 0.979);
+ }
 
 
 
@@ -133,7 +189,7 @@ li{
 }
 
 #aboutMeTitle{
-    margin-top: 7vh;
+    margin-top: 6vh;
     text-align: center;
     margin-bottom: 7vh;
 }
@@ -376,10 +432,14 @@ li{
     margin: 0 auto;
 }
 
+#placeHolder, #placeHolder1{
+    opacity: 0;
+}
+
 #portfolioTitle{
     text-align: center;
-    padding-top: 5vh;
-    margin-bottom: 2vh;
+    padding-top: 4vh;
+    margin-bottom: 5vh;
 }
 
 .cardContainer{
@@ -727,4 +787,11 @@ li{
     border: 2px solid rgb(226, 226, 226);
     font-size: large;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+#sendBtn:hover{
+    background: rgb(39, 187, 255);
+    color: rgb(0, 0, 0);
+    border: none;
 }
