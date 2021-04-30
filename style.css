@@ -46,19 +46,19 @@ li{
 
 #firstDiv{
     width: 45vw;
-    height: 50vh!important;
+    /* height: 50vh!important; */
     color: rgb(255, 255, 255);
     border-radius: 18px;
     text-align: center;
     /* display: block; */
     background-color: rgba(255, 255, 255, 0.205);
-    padding: 8px;
+    padding: 2vw;
     margin-bottom: 5vh;
 }
 
 
 #intro{
-    margin-top: 10vh;
+    margin-top: 4vh;
 }
 
 
@@ -69,6 +69,7 @@ li{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 3vh;
     /* flex-direction stacks the items on top of each other. For some reason align-items is centering them horizontally and justify-content isn't doing anything. You've left justify-content in incase it's a bug */
    
 }
@@ -91,6 +92,7 @@ li{
     display: flex;
     align-items: center;
     height: 7.6vh;
+    /* position: relative; */
 }
 
 .navbar-fixed{
@@ -121,6 +123,15 @@ li{
     margin-left: 3.5vw;
 }
 
+#rightNav{
+    position: absolute;
+    right: 7%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* #gitHubRef{
     height: fit-content;
     background-color: salmon;
@@ -139,14 +150,14 @@ li{
 #ghIcon{
    height: 5vh;
    width: 5vh;
-   right: 0;
+   /* right: 0; */
    background: white;
    background-size: 10px;
    border-radius: 20%;
    transition: 0.3s;
-   display: block;
+   display: inline-block;
    padding: 0.5vh;
-   margin-left: 36vw;
+   /* margin-left: 36vw; */
 }
 
 #ghIcon:hover{
@@ -161,7 +172,7 @@ li{
     background-size: 10px;
     border-radius: 20%;
     transition: 0.3s;
-    display: block;
+    display: inline-block;
     padding: 0.5vh;
     margin-left: 2vw;
  }
