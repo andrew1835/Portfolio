@@ -144,13 +144,13 @@ li{
 }
 
 .resume{
-    margin-left: 1.3vw;
+    margin-left: 1.2vw;
     border-radius: 10%;
     padding: 1.2vh;
 }
 
 .resume:hover{
-    background-color: green;
+    background-color: rgb(2, 173, 2);
 }
 
 #ghIcon{
@@ -774,6 +774,54 @@ li{
     margin-left: 10%;
 }
 
+#furtherExperience{
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 2vw;
+    text-align: center;
+    width: 60%;
+}
+
+#resAndGit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4vh;
+}
+
+.resume2{
+    border-radius: 2px;
+    background-color: rgb(100, 100, 100);
+    padding: 2vh;
+    margin-right: 3vw;
+}
+
+.resume2:hover{
+    background-color: rgb(2, 173, 2);
+}
+
+
+#ghIcon2{
+    height: 8vh;
+    width: 8vh;
+    /* right: 0; */
+    background: white;
+    border: 1px solid rgb(114, 114, 114);
+    background-size: 10px;
+    border-radius: 20%;
+    transition: 0.3s;
+    display: inline-block;
+    padding: 0.5vh;
+    margin-right: 2vw;
+    /* margin-left: 36vw; */
+ }
+ 
+ #ghIcon2:hover{
+     background-color:rgba(0, 132, 255, 0.979);
+ }
+ 
+
+
 
 
 
@@ -795,18 +843,25 @@ li{
     margin: 0 auto;
     margin-bottom: 20vh;
     position: relative;
+    text-align: center;
 }
 
 #contactTitle{
     text-align: center;
     margin-top: 7vh;
-    margin-bottom: 7vh;
+    margin-bottom: 3vh;
 }
+
+#contactMe{
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
 
 .contactField{
     width: 100%;
     padding: 1%;
-    margin-bottom: 1.5%;
+    margin-bottom: 2%;
 }
 
 
@@ -818,10 +873,11 @@ li{
 
 #sendBtn{
     position: absolute;
-    left: 42%;
-    height: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 60px;
     width: 100px;
-    height: 13%;
     background: transparent;
     color: white;
     border: 2px solid rgb(226, 226, 226);
@@ -834,3 +890,105 @@ li{
     background: rgb(0, 139, 204);
     border: none;
 }
+
+
+
+#otherContact{
+    position: relative;
+    display: flex;
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.gh2{
+    position: absolute;
+    right: 14%;
+    margin-right: 0!important;
+}
+
+.l2{
+    position: absolute;
+    width: 5vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#linkedInIcon2{
+    height: 5vh;
+    width: 5vh;
+    right: 0;
+    background: white;
+    background-size: 10px;
+    border-radius: 20%;
+    transition: 0.3s;
+    display: inline-block;
+    padding: 0.5vh;
+ }
+
+ #linkedInIcon2:hover{
+    background-color:rgba(255, 60, 0, 0.979);
+}
+
+.floatLeft{
+    position: absolute;
+    left: 0%;
+}
+
+@media only screen and (max-width: 768px) {
+    #topDiv{
+        background-image: none;
+        background-color: black;
+        height: 100%;
+    }
+
+    #firstDiv{
+        width: 80%;
+        /* height: 50vh!important; */
+        color: rgb(255, 255, 255);
+        border-radius: 18px;
+        text-align: center;
+        /* display: block; */
+        background-color: rgba(255, 255, 255, 0.205);
+        padding: 2vw;
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+    }
+
+    .listItems{
+        border: 1px solid;
+        width: 40vw;
+        padding: 5%;
+        margin-top: 0!important;
+        margin-bottom: 0vh!important;
+        transition: 0.2s;
+        border-radius: 10px;
+    }
+
+    .resume{
+     display: none;
+    }
+
+    #ghIcon{
+     display: none;
+     }
+
+     #linkedInIcon{
+        display: none;
+     }
+
+     #leftAbout{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+     
+    
+  }
