@@ -531,9 +531,10 @@ li{
 }
 
 .cardImage{
+    margin-left: 5%;
     min-height: 68%;
     max-height: 83%;
-    width: 100%;
+    width: 90%;
     margin-top: 2%;
     cursor: pointer;
     box-sizing: border-box;
@@ -911,6 +912,19 @@ li{
     margin-right: 0!important;
 }
 
+#ghIcon3{
+    height: 5vh;
+    width: 5vh;
+    /* right: 0; */
+    background: white;
+    background-size: 10px;
+    border-radius: 20%;
+    transition: 0.3s;
+    display: inline-block;
+    padding: 0.5vh;
+    /* margin-left: 36vw; */
+ }
+
 .l2{
     position: absolute;
     width: 5vh;
@@ -938,7 +952,7 @@ li{
 .floatLeft{
     position: absolute;
     left: 0%;
-    font-size: small;
+    font-size: medium;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1147,6 +1161,7 @@ li{
     }
 
     .cardImage{
+        margin-left: 0%;
         min-height: 68%;
         max-height: 83%;
         margin-bottom: 3vh;
@@ -1280,6 +1295,40 @@ li{
         margin-bottom: 20vh;
         border-radius: 20px;
         box-sizing: border-box;
+    }
+
+    .gh2{
+        position: absolute;
+        right: 10%;
+        width: 5vw;
+        margin-right: 0!important;
+    }
+
+    .l2{
+        position: absolute;
+        width: 5vh;
+        left: auto;
+        right: 23%;
+        margin: 0 auto;
+    }
+
+    #ghIcon3{
+        height: 5vh;
+        width: 5vh;
+        /* right: 0; */
+        background: white;
+        background-size: 10px;
+        border-radius: 20%;
+        transition: 0.3s;
+        display: inline-block;
+        padding: 0.5vh;
+        /* margin-left: 36vw; */
+     }
+
+     .floatLeft{
+        position: absolute;
+        left: 0%;
+        font-size: small;
     }
     
   }
