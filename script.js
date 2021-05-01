@@ -88,6 +88,46 @@ window.addEventListener("click", function close5(event) {
 })
 
 
+// MOBILE
+
+window.addEventListener("touchstart", function close1(event) {
+    if (event.target == modal || event.target == close) {
+        modal.style.display = "none"
+        $("#content").removeClass('bodyBlur');
+    }
+})
+
+
+window.addEventListener("touchstart", function close2(event) {
+    if (event.target == modal2 || event.target == document.getElementById("xIcon2")) {
+        modal2.style.display = "none"
+        $("#content").removeClass('bodyBlur');
+    }
+})
+
+window.addEventListener("touchstart", function close3(event) {
+    if (event.target == modal3 || event.target == document.getElementById("xIcon3")) {
+        modal3.style.display = "none"
+        $("#content").removeClass('bodyBlur');
+    }
+})
+
+window.addEventListener("touchstart", function close4(event) {
+    if (event.target == modal4 || event.target == document.getElementById("xIcon4")) {
+        modal4.style.display = "none"
+        $("#content").removeClass('bodyBlur');
+    }
+})
+
+
+window.addEventListener("touchstart", function close5(event) {
+    if (event.target == modal5 || event.target == document.getElementById("xIcon5")) {
+        modal5.style.display = "none"
+        $("#content").removeClass('bodyBlur');
+    }
+})
+
+
 
 
 
