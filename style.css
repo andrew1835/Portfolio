@@ -1195,7 +1195,7 @@ li{
         margin: 0 auto;
         background-color: rgb(241, 241, 241);
         z-index: 101;
-        top: 1vh;
+        top: 2vh;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.397);
         overflow: auto;
     }
@@ -1210,7 +1210,7 @@ li{
         background-color: rgb(0, 0, 0);
         margin: 0%;
         text-align: center;
-        z-index: 300;
+        z-index: 2000;
         position: absolute;
         cursor: pointer;
         right: 8px;
@@ -1218,6 +1218,7 @@ li{
         border-radius: 5px;
         width: 10vw !important;
         padding: 2vw;
+        margin-top: 0vh;
         opacity: 1;
     }
 
