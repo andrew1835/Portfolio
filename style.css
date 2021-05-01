@@ -1183,4 +1183,58 @@ li{
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.397);
         overflow: auto;
     }
+
+    .landscape{
+        position: absolute;
+        top: 30%;
+    }
+
+    #xIcon, #xIcon2, #xIcon3, #xIcon4, #xIcon5 {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.76);
+        margin: 0%;
+        text-align: center;
+        z-index: 101;
+        position: absolute;
+        cursor: pointer;
+        right: 8px;
+        top: 5px;
+        border-radius: 5px;
+        width: 10vw !important;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+        opacity: 0.9;
+    }
+
+    .arrows{
+        color: rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.76);
+        margin: 0%;
+        width: fit-content;
+        text-align: center;
+        z-index: 101;
+        position: absolute;
+        margin-top: 0%;
+        top: 25%;
+        cursor: pointer;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        border-radius: 10px;
+    }
+
+    #modal1Info{
+        position: absolute;
+        display: block;
+        top: 57%;
+        margin: 0 auto !important;
+        text-align: center;
+        justify-content: center;
+        height: 40%;
+    }
+
+    .summary, .role, .languages{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2vh;
+    }
   }
