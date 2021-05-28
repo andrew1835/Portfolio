@@ -217,7 +217,7 @@ li{
 
 #leftAbout{
     float: left;
-    margin-left: 10%;
+    margin-left: 7%;
     margin-right: 3%;
     width: 37%;
     text-align: center;
@@ -252,10 +252,26 @@ li{
 
 #rightAbout{
     float: right;
-    margin-right: 10%;
-    margin-left: 3%;
-    width: 37%;
+    margin-right: 6%;
+    margin-left: 0%;
+    margin-bottom: 6vh;
+    width: 47%;
     text-align: center;
+}
+
+#skillIcon{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skillIconClass{
+    width: 6vw;
+    padding: 1vw;
+    padding-bottom: 0.5vh;
+}
+
+.skillDescription{
+    display: inline-block;
 }
 
 .skillItem{
@@ -393,12 +409,12 @@ li{
 } */
 
 #additionalInfo{
-    margin-bottom: 0;
+    margin-bottom: 10vh;
 }
 
 #rightAboutTwo{
     float: right;
-    margin-right: 3%;
+    margin-right: 6%;
     margin-left: 0%;
     width: 47%;
     text-align: center;
@@ -406,7 +422,7 @@ li{
 
 #achievementsTitle{
     margin-top: 1.3vh;
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
 }
 
 #icons{
