@@ -1061,8 +1061,13 @@ li{
         width: 90%;
         margin-left: 5%;
         margin-right: 0;
+        margin-bottom: 0;
         text-align: center;
         box-sizing: border-box;
+    }
+
+    #programmingSkills{
+        margin-top: 6vh;
     }
 
 
@@ -1073,6 +1078,12 @@ li{
         text-align: right;
         font-size: small;
         font-weight: bold;
+    }
+
+    .skillIconClass{
+        width: 75%;
+        padding: 1vw;
+        padding-bottom: 0.5vh;
     }
 
     #rightAboutTwo{
@@ -1086,6 +1097,15 @@ li{
     #achievementsTitle{
         margin-top: 1.3vh;
         margin-bottom: 0vh;
+    }
+
+    .skillDescription{
+        width: 30%;
+    }
+
+    #additionalInfo{
+        margin-top: 1vh;
+        margin-bottom: 5vh;
     }
 
     #icons{
