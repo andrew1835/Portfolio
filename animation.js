@@ -15,74 +15,102 @@
 // }
 
 // they can be random predefined colors if you create an array that has all the colors you want and then you randomly assign one of the colors using math.random(math.floor * number of items in array) + 1 
+
+
+// TODO:
+// 1. Make the circles delete once they reach the top (to do this, you set the setTimeout time to be 1 second less than the animation duration)
+// 2. Make them random sizes
+// 3. Set the intervals so that the times intervals are a random time between 12-25 seconds
+// 4. Make the circles delete when you hover over them
 // they can also be random sizes
 
 var floatUpRandomTime = (Math.random() * 10) + 8
 // The order is orange, yellow, green, blue, purple, pink
-var colorArray = ["rgb(252, 145, 74)", "rgb(248, 217, 80)", "rgb(40, 214, 49)", "rgb(56, 142, 255)", "rgb(143, 59, 252)", "rgb(245, 105, 170)"]
+var colorArray = ["#D4F1F9", "#CDEFE7", "#D3F1DC", "#D4F1F9", "#CDEFE7", "#D3F1DC"]
 var randomColor = colorArray[Math.floor(Math.random() * 7)]
 console.log(randomColor)
 
 
-var circleBlue = document.createElement("div")
-circleBlue.className = "circle"
-document.body.append(circleBlue)
-var randomPercentRightTwo = (Math.random() * 90) + 5
-circleBlue.setAttribute("style", `right: ${randomPercentRightTwo}%`)
-circleBlue.style.background = `${randomColor}`
-console.log("working")
-// setInterval(function () {
-//     // var randomColor = colorArray[Math.floor(Math.random() * 7)]
-//     // console.log(math.floor)
-//     circleBlue.className = "circle"
-//     document.body.append(circleBlue)
-//     var randomPercentRight = Math.random() * 100
-//     console.log(randomPercentRight)
-//     circleBlue.setAttribute("style", `right: ${randomPercentRight}%`)
-//     console.log("working")
-// }, 5000)
 
 
-
-
-var circleRed = document.createElement("div")
-circleRed.className = "circle"
-document.body.append(circleRed)
+var circleOne = document.createElement("div")
+circleOne.className = "circle"
+document.body.append(circleOne)
 var randomPercentRightTwo = (Math.random() * 90) + 5
 console.log("2 " + randomPercentRightTwo)
-circleRed.setAttribute("style", `right: ${randomPercentRightTwo}%`)
-circleRed.style.background = `${randomColor}`
-// var randomColor = Math.floor(Math.random() * 10000)
-// console.log(randomColor)
-// circleRed.style.background = `#${randomColor}`
-console.log("workingRed")
-
-// setInterval(function () {
-//     circleRed.className = "circleTwo"
-//     document.body.append(circleRed)
-//     var randomPercentRightTwo = Math.random() * 100
-//     console.log(randomPercentRightTwo)
-//     circleRed.setAttribute("style", `right: ${randomPercentRightTwo}%`)
-//     console.log("workingRed")
-// }, 5000)
+circleOne.setAttribute("style", `right: ${randomPercentRightTwo}%`)
+circleOne.style.background = `${randomColor}`
+setTimeout(function () {
+    circleOne.style.opacity = 0
+}, 4000)
 
 
 
+setInterval(function () {
+    var circleBlue = document.createElement("div")
+    circleBlue.className = "circle"
+    document.body.append(circleBlue)
+    var randomPercentRightTwo = (Math.random() * 90) + 5
+    circleBlue.setAttribute("style", `right: ${randomPercentRightTwo}%`)
+    var randomColor = colorArray[Math.floor(Math.random() * 7)]
+    circleBlue.style.background = `${randomColor}`
+    console.log("working")
+    setTimeout(function () {
+        circleBlue.style.opacity = 0
+    }, 4000)
+}, 2000)
 
-circleBlue.addEventListener("mouseover", function () {
-    circleBlue.style.background = "yellow"
-    circleBlue.style.opacity = 0
-    console.log("hover")
-})
 
 
-circleRed.addEventListener("mouseover", function () {
-    circleRed.style.background = "yellow"
-    circleRed.style.opacity = 0
-    console.log("hover")
-    // redScore++
-    // calculateScore()
-})
+
+
+
+
+
+
+var circleTwo = document.createElement("div")
+circleTwo.className = "circle"
+document.body.append(circleTwo)
+var randomPercentRightTwo = (Math.random() * 90) + 5
+console.log("2 " + randomPercentRightTwo)
+circleTwo.setAttribute("style", `right: ${randomPercentRightTwo}%`)
+circleTwo.style.background = `${randomColor}`
+console.log("workingTwo")
+setTimeout(function () {
+    circleTwo.style.opacity = 0
+}, 4000)
+
+setInterval(function () {
+    var circleTwo = document.createElement("div")
+    circleTwo.className = "circle"
+    document.body.append(circleTwo)
+    var randomPercentRightTwo = (Math.random() * 90) + 5
+    circleTwo.setAttribute("style", `right: ${randomPercentRightTwo}%`)
+    var randomColor = colorArray[Math.floor(Math.random() * 7)]
+    circleTwo.style.background = `${randomColor}`
+    console.log("working")
+    setTimeout(function () {
+        circleTwo.style.opacity = 0
+    }, 4000)
+}, 2000)
+
+
+
+// var allCircle = document.querySelectorAll(".circle")
+// allCircle.addEventListener("mouseover", function () {
+//     allCircle.style.background = "yellow"
+//     allCircle.style.opacity = 0
+//     console.log("hover")
+// })
+
+
+// circleTwo.addEventListener("mouseover", function () {
+//     circleTwo.style.background = "yellow"
+//     circleTwo.style.opacity = 0
+//     console.log("hover")
+//     // redScore++
+//     // calculateScore()
+// })
 
 
 // one circle coming from the left that's aqua, one coming from the right that's red
