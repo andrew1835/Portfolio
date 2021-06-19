@@ -1,20 +1,36 @@
 body {
     overflow: hidden;
+    background: rgb(113, 238, 255);
 }
 
 .circle{
-    background-color: aqua;
-    width: 150px;
-    height: 150px;
+
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     position: absolute;
+    transition: 1s;
     animation-name: move;
-    animation-duration: 3s;
-    animation-iteration-count: 2;
-    animation-direction: alternate;
+    animation-duration: 5s;
+    cursor: pointer;
 }
 
-@keyframes move {
-    0% {left: 0%;}
-    100% {left: 100%;}
+.circleTwo{
+  
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: absolute;
+    transition: 1s;
+    animation-name: move;
+    animation-duration: 5s;
+    cursor: pointer;
 }
+
+
+
+@keyframes move {
+    0% {bottom: -15%;}
+    100% {bottom: 100%;}
+}
+
