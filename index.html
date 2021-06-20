@@ -11,7 +11,11 @@
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
 <link rel="icon" href="./images/portfolioIcon.png">
+<link rel="stylesheet" href="animation.css">
 
 
 
@@ -24,7 +28,8 @@
 
                 <div id="intro">
 
-                    <h1>Hey, my name is Andrew and I'm a front-end web developer. Click below to learn more about me
+                    <h1 id="introH">Hey, my name is Andrew and I'm a front-end web developer. Click below to learn more
+                        about me
                     </h1>
 
                 </div>
@@ -32,15 +37,15 @@
                 <div id="list">
 
                     <a href="#navBar">
-                        <h2 class="listItems">About</h2>
+                        <h2 class="listItems" id="liOne">About</h2>
                     </a>
                     <br>
                     <a href="#placeHolder">
-                        <h2 class="listItems">Portfolio</h2>
+                        <h2 class="listItems" id="liTwo">Portfolio</h2>
                     </a>
                     <br>
                     <a href="#contact">
-                        <h2 class="listItems">Contact</h2>
+                        <h2 class="listItems" id="liThree">Contact</h2>
                     </a>
 
                 </div>
@@ -81,7 +86,7 @@
                     <img src="./images/LinkedinProfile.JPG" loading="lazy" alt="profile picture" id="profilePicture">
                 </div>
                 <div id="descriptionOfMe">
-                    <h2>About Me</h2>
+                    <h2>Bio</h2>
                     <p>Front-end software engineer with a passion for learning and problem solving. Recently earned my<a
                             href="https://bootcamp.uw.edu/coding/" target="_blank" id="certificateLink">
                             certificate
@@ -301,8 +306,8 @@
             <div id="contactContainer">
 
                 <h1 class="sectionTitles" id="contactTitle">Contact</h1>
-                <h4 id="contactMe">Feel free to reach out to me by either
-                    using the form below or by messaging me at my email, LinkedIn, or GitHub</h4>
+                <h3 id="contactMe">Feel free to reach out by either
+                    using the form below or by messaging me at my email, LinkedIn, or GitHub</h3>
                 <form action="https://mailthis.to/andrew18" method="POST" encType="multipart/form-data" id="formId">
                     <input type="text" name="name" placeholder="Name" class="contactField">
                     <input type="email" name="_replyto" placeholder="Your email" class="contactField">
@@ -598,6 +603,7 @@
 
 
     <script src="script.js"></script>
+    <script src="animation.js"></script>
 </body>
 
 </html>

@@ -19,13 +19,14 @@ var randomColorThree = colorArray[Math.floor(Math.random() * 7)]
 var randomColorFour = colorArray[Math.floor(Math.random() * 7)]
 var randomColorFive = colorArray[Math.floor(Math.random() * 7)]
 var randomColorSix = colorArray[Math.floor(Math.random() * 7)]
+var topDiv = document.getElementById("topDiv")
 
 
 
 
 var circleOne = document.createElement("div")
 circleOne.className = "circle"
-document.body.append(circleOne)
+topDiv.append(circleOne)
 var randomPercentRightTwo = (Math.random() * 90) + 5
 circleOne.setAttribute("style", `right: ${randomPercentRightTwo}%`)
 circleOne.style.background = `${randomColor}`
@@ -38,6 +39,9 @@ console.log(randomDuration)
 setTimeout(function () {
     circleOne.remove()
 }, randomDuration * 1000)
+setTimeout(function () {
+    circleOne.style.opacity = 1
+}, 1500)
 circleOne.addEventListener("mouseover", function () {
     circleOne.style.background = "#f795c3"
     circleOne.style.opacity = 0
@@ -46,7 +50,7 @@ circleOne.addEventListener("mouseover", function () {
 
 var circleTwo = document.createElement("div")
 circleTwo.className = "circle"
-document.body.append(circleTwo)
+topDiv.append(circleTwo)
 var randomPercentRightTwo = (Math.random() * 90) + 5
 circleTwo.setAttribute("style", `right: ${randomPercentRightTwo}%`)
 circleTwo.style.background = `${randomColorTwo}`
@@ -58,6 +62,9 @@ circleTwo.style.animationDuration = randomDurationTwo + "s"
 setTimeout(function () {
     circleTwo.remove()
 }, randomDurationTwo * 1000)
+setTimeout(function () {
+    circleTwo.style.opacity = 1
+}, 1500)
 circleTwo.addEventListener("mouseover", function () {
     circleTwo.style.background = "#f795c3"
     circleTwo.style.opacity = 0
@@ -66,7 +73,7 @@ circleTwo.addEventListener("mouseover", function () {
 
 var circleThree = document.createElement("div")
 circleThree.className = "circle"
-document.body.append(circleThree)
+topDiv.append(circleThree)
 var randomPercentRightThree = (Math.random() * 90) + 5
 circleThree.setAttribute("style", `right: ${randomPercentRightThree}%`)
 circleThree.style.background = `${randomColorThree}`
@@ -78,6 +85,9 @@ circleThree.style.animationDuration = randomDurationThree + "s"
 setTimeout(function () {
     circleThree.remove()
 }, randomDurationThree * 1000)
+setTimeout(function () {
+    circleThree.style.opacity = 1
+}, 1500)
 circleThree.addEventListener("mouseover", function () {
     circleThree.style.background = "#f795c3"
     circleThree.style.opacity = 0
@@ -87,7 +97,7 @@ circleThree.addEventListener("mouseover", function () {
 
 var circleFour = document.createElement("div")
 circleFour.className = "circle"
-document.body.append(circleFour)
+topDiv.append(circleFour)
 var randomPercentRightFour = (Math.random() * 90) + 5
 circleFour.setAttribute("style", `right: ${randomPercentRightFour}%`)
 circleFour.style.background = `${randomColorFour}`
@@ -99,6 +109,9 @@ circleFour.style.animationDuration = randomDurationFour + "s"
 setTimeout(function () {
     circleFour.remove()
 }, randomDurationFour * 1000)
+setTimeout(function () {
+    circleFour.style.opacity = 1
+}, 1500)
 circleFour.addEventListener("mouseover", function () {
     circleFour.style.background = "#f795c3"
     circleFour.style.opacity = 0
@@ -107,7 +120,7 @@ circleFour.addEventListener("mouseover", function () {
 
 var circleFive = document.createElement("div")
 circleFive.className = "circle"
-document.body.append(circleFive)
+topDiv.append(circleFive)
 var randomPercentRightFive = (Math.random() * 90) + 5
 circleFive.setAttribute("style", `right: ${randomPercentRightFive}%`)
 circleFive.style.background = `${randomColorFive}`
@@ -119,6 +132,9 @@ circleFive.style.animationDuration = randomDurationFive + "s"
 setTimeout(function () {
     circleFive.remove()
 }, randomDurationFive * 1000)
+setTimeout(function () {
+    circleFive.style.opacity = 1
+}, 1500)
 circleFive.addEventListener("mouseover", function () {
     circleFive.style.background = "#f795c3"
     circleFive.style.opacity = 0
@@ -128,7 +144,7 @@ circleFive.addEventListener("mouseover", function () {
 
 var circleSix = document.createElement("div")
 circleSix.className = "circle"
-document.body.append(circleSix)
+topDiv.append(circleSix)
 var randomPercentRightSix = (Math.random() * 90) + 5
 circleSix.setAttribute("style", `right: ${randomPercentRightSix}%`)
 circleSix.style.background = `${randomColorSix}`
@@ -140,6 +156,9 @@ circleSix.style.animationDuration = randomDurationSix + "s"
 setTimeout(function () {
     circleSix.remove()
 }, randomDurationSix * 1000)
+setTimeout(function () {
+    circleSix.style.opacity = 1
+}, 1500)
 circleSix.addEventListener("mouseover", function () {
     circleSix.style.background = "#f795c3"
     circleSix.style.opacity = 0
@@ -153,11 +172,11 @@ circleSix.addEventListener("mouseover", function () {
 setInterval(function () {
     var circleOne = document.createElement("div")
     circleOne.className = "circle"
-    document.body.append(circleOne)
+    topDiv.append(circleOne)
     var randomPercentRightTwo = (Math.random() * 90) + 5
     circleOne.setAttribute("style", `right: ${randomPercentRightTwo}%`)
     var randomColor = colorArray[Math.floor(Math.random() * 7)]
-    circleOne.style.background = `${randomColorOne}`
+    circleOne.style.background = `${randomColor}`
     var randomSize = Math.floor(Math.random() * 75) + 18
     circleOne.style.width = randomSize + "px"
     circleOne.style.height = randomSize + "px"
@@ -166,6 +185,9 @@ setInterval(function () {
     setTimeout(function () {
         circleOne.remove()
     }, randomDuration * 1000)
+    setTimeout(function () {
+        circleOne.style.opacity = 1
+    }, 1500)
     circleOne.addEventListener("mouseover", function () {
         circleOne.style.background = "#f795c3"
         circleOne.style.opacity = 0
@@ -177,7 +199,7 @@ setInterval(function () {
 setInterval(function () {
     var circleTwo = document.createElement("div")
     circleTwo.className = "circle"
-    document.body.append(circleTwo)
+    topDiv.append(circleTwo)
     var randomPercentRightTwo = (Math.random() * 90) + 5
     circleTwo.setAttribute("style", `right: ${randomPercentRightTwo}%`)
     var randomColor = colorArray[Math.floor(Math.random() * 7)]
@@ -190,6 +212,9 @@ setInterval(function () {
     setTimeout(function () {
         circleTwo.remove()
     }, randomDurationTwo * 1000)
+    setTimeout(function () {
+        circleTwo.style.opacity = 1
+    }, 1500)
     circleTwo.addEventListener("mouseover", function () {
         circleTwo.style.background = "#f795c3"
         circleTwo.style.opacity = 0
@@ -199,7 +224,7 @@ setInterval(function () {
 setInterval(function () {
     var circleTwo = document.createElement("div")
     circleTwo.className = "circle"
-    document.body.append(circleTwo)
+    topDiv.append(circleTwo)
     var randomPercentRightTwo = (Math.random() * 90) + 5
     circleTwo.setAttribute("style", `right: ${randomPercentRightTwo}%`)
     var randomColor = colorArray[Math.floor(Math.random() * 7)]
@@ -212,6 +237,9 @@ setInterval(function () {
     setTimeout(function () {
         circleTwo.remove()
     }, randomDurationTwo * 1000)
+    setTimeout(function () {
+        circleTwo.style.opacity = 1
+    }, 1500)
     circleTwo.addEventListener("mouseover", function () {
         circleTwo.style.background = "#f795c3"
         circleTwo.style.opacity = 0
@@ -221,7 +249,7 @@ setInterval(function () {
 setInterval(function () {
     var circleTwo = document.createElement("div")
     circleTwo.className = "circle"
-    document.body.append(circleTwo)
+    topDiv.append(circleTwo)
     var randomPercentRightTwo = (Math.random() * 90) + 5
     circleTwo.setAttribute("style", `right: ${randomPercentRightTwo}%`)
     var randomColor = colorArray[Math.floor(Math.random() * 7)]
@@ -234,6 +262,9 @@ setInterval(function () {
     setTimeout(function () {
         circleTwo.remove()
     }, randomDurationTwo * 1000)
+    setTimeout(function () {
+        circleTwo.style.opacity = 1
+    }, 1500)
     circleTwo.addEventListener("mouseover", function () {
         circleTwo.style.background = "#f795c3"
         circleTwo.style.opacity = 0

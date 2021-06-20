@@ -1,18 +1,19 @@
-body {
+/* body {
     overflow: hidden;
     background: #E7FEFF;
-}
+} */
 
-h1{
+/* h1{
     text-align: center;
     width: 50vw;
     margin: 0 auto;
     margin-top: 40vh;
     z-index: 1000;
     font-family: 'Poppins', sans-serif;
+    font-weight: 300;
     text-shadow: 10px orange;
     line-height: 150%;
-}
+} */
 
 .circle{
 
@@ -24,7 +25,8 @@ h1{
     animation-name: move;
     /* animation-duration: 5s; */
     cursor: pointer;
-    z-index: -1;
+    z-index: 1;
+    opacity: 0;
 }
 
 
@@ -32,7 +34,7 @@ h1{
 
 
 @keyframes move {
-    0% {bottom: -13%;}
+    0% {bottom: -10%;}
     100% {bottom: 100%;}
 }
 

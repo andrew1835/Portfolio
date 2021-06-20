@@ -7,7 +7,7 @@ html {
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+    font-family: 'Poppins', sans-serif;
 }
 
 .bodyBlur{
@@ -34,31 +34,34 @@ li{
 /* TODO: HOMESCREEN */
 
 #topDiv{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background-image: url("https://wallpapercave.com/wp/wp2729921.gif") ;
     background-size: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
+    background: #E7FEFF;
+    z-index: -10;
 }
 
 
 #firstDiv{
     width: 45vw;
-    /* height: 50vh!important; */
-    color: rgb(255, 255, 255);
+    color: black;
     border-radius: 18px;
     text-align: center;
-    /* display: block; */
-    background-color: rgba(255, 255, 255, 0.205);
-    padding: 2vw;
-    margin-bottom: 5vh;
+    margin: 0 auto;
+    z-index: 2;
+    height: fit-content;
 }
 
 
-#intro{
+/* #intro{
     margin-top: 4vh;
+} */
+
+#introH{
+    margin-top: 27vh;
+    font-weight: 300;
 }
 
 
@@ -70,6 +73,7 @@ li{
     justify-content: center;
     flex-direction: column;
     margin-bottom: 3vh;
+
     /* flex-direction stacks the items on top of each other. For some reason align-items is centering them horizontally and justify-content isn't doing anything. You've left justify-content in incase it's a bug */
    
 }
@@ -80,10 +84,19 @@ li{
     margin-top: 0!important;
     margin-bottom: 0vh!important;
     transition: 0.2s;
+    font-weight: 400;
 }
 
-.listItems:hover{
-    background-color: rgb(36, 36, 36);
+
+
+#liOne:hover{
+    background: #b1eeff;
+}
+#liTwo:hover{
+    background: #9feedb;
+}
+#liThree:hover{
+    background: #89e5a5;
 }
 
 
@@ -97,6 +110,7 @@ li{
     display: flex;
     align-items: center;
     height: 7.6vh;
+    z-index: 100;
     /* position: relative; */
 }
 
@@ -105,6 +119,7 @@ li{
     z-index: 100;
     position: fixed;
     width: 100%;
+    z-index: 4;
 }
 
 .navButton{
@@ -254,7 +269,7 @@ li{
     float: right;
     margin-right: 6%;
     margin-left: 0%;
-    margin-bottom: 6vh;
+    margin-bottom: 3vh;
     width: 47%;
     text-align: center;
 }
@@ -422,7 +437,7 @@ li{
 
 #achievementsTitle{
     margin-top: 1.3vh;
-    margin-bottom: 8vh;
+    margin-bottom: 5vh;
 }
 
 #icons{
@@ -872,6 +887,7 @@ li{
 #contactMe{
     text-align: center;
     margin-bottom: 3vh;
+    font-weight: 300;
 }
 
 
