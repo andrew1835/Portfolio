@@ -164,8 +164,10 @@ li{
     padding: 1.2vh;
 }
 
+
+
 .resume:hover{
-    background-color: rgb(2, 173, 2);
+    color: #7affa2;
 }
 
 #ghIcon{
@@ -182,7 +184,7 @@ li{
 }
 
 #ghIcon:hover{
-    background-color:rgba(0, 132, 255, 0.979);
+    background: #6dddfc;
 }
 
 #linkedInIcon{
@@ -199,7 +201,7 @@ li{
  }
  
  #linkedInIcon:hover{
-     background-color:rgba(255, 85, 34, 0.979);
+    background: #fd97be;;
  }
 
 
@@ -220,14 +222,15 @@ li{
 
 
 
-.sectionTitles{
+/* .sectionTitles{
     text-decoration: underline;
-}
+} */
 
 #aboutMeTitle{
     margin-top: 6vh;
     text-align: center;
     margin-bottom: 7vh;
+    font-weight: 600;
 }
 
 #leftAbout{
@@ -243,8 +246,12 @@ li{
     border-radius: 118px;
 }
 
+#bio{
+    font-weight: 600;
+}
+
 #descriptionOfMe{
-    line-height: 1.5;
+    line-height: 170%;
     width: 90%;
     text-align: center;
     margin: 0 auto;
@@ -272,6 +279,10 @@ li{
     margin-bottom: 3vh;
     width: 47%;
     text-align: center;
+}
+
+#programmingSkills{
+    font-weight: 600;
 }
 
 #skillIcon{
@@ -304,7 +315,7 @@ li{
     text-align: right;
 }
 
-#jsSkillBar{
+/* #jsSkillBar{
     width: 56%;
     height: 4.5vh;
     background-color:rgba(0, 132, 255, 0.979);
@@ -417,7 +428,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 /* #achievementsSection{
     
@@ -438,6 +449,7 @@ li{
 #achievementsTitle{
     margin-top: 1.3vh;
     margin-bottom: 5vh;
+    font-weight: 600;
 }
 
 #icons{
@@ -508,7 +520,8 @@ li{
 
 #portfolioTitle{
     text-align: center;
-    padding-top: 4vh;
+    /* padding-top: 4vh; */
+    font-weight: 600;
     margin-bottom: 5vh;
 }
 
@@ -559,6 +572,7 @@ li{
     text-align: center;
     margin-bottom: 0;
     margin-top: 1vh;
+    font-weight: 500;
 }
 
 .cardImage{
@@ -607,7 +621,7 @@ li{
     width: 40%;
     padding: 1%;
     border-bottom: 1px solid black;;
-
+    font-weight: 500;
 }
 
 
@@ -822,14 +836,15 @@ li{
 }
 
 .resume2{
-    border-radius: 2px;
+    border-radius: 8px;
     background-color: rgb(100, 100, 100);
     padding: 2vh;
     margin-right: 3vw;
 }
 
 .resume2:hover{
-    background-color: rgb(2, 173, 2);
+    background-color: #67fd94;
+    color: black;
 }
 
 
@@ -838,7 +853,7 @@ li{
     width: 8vh;
     /* right: 0; */
     background: white;
-    border: 1px solid rgb(114, 114, 114);
+   
     background-size: 10px;
     border-radius: 20%;
     transition: 0.3s;
@@ -849,7 +864,7 @@ li{
  }
  
  #ghIcon2:hover{
-     background-color:rgba(0, 132, 255, 0.979);
+     background-color:rgba(91, 203, 255, 0.979);
  }
  
 
@@ -882,6 +897,7 @@ li{
     text-align: center;
     margin-top: 7vh;
     margin-bottom: 3vh;
+    font-weight: 600;
 }
 
 #contactMe{
@@ -917,10 +933,12 @@ li{
     font-size: large;
     cursor: pointer;
     transition: 0.3s;
+    font-weight: 700;
 }
 
 #sendBtn:hover{
-    background: rgb(0, 139, 204);
+    color: black;
+    background: rgb(111, 181, 214);
     border: none;
 }
 
@@ -938,6 +956,10 @@ li{
     margin-bottom: 10vh;
     border-radius: 20px;
     box-sizing: border-box;
+}
+
+#emailBottom{
+    font-weight: 600;
 }
 
 .gh2{
@@ -980,11 +1002,11 @@ li{
  }
 
  #ghIcon3:hover{
-    background-color:rgba(0, 132, 255, 0.979);
+    background-color:rgb(106, 194, 235);;
  }
 
  #linkedInIcon2:hover{
-    background-color:rgba(255, 85, 34, 0.979);
+    background: #fd97be;
 }
 
 .floatLeft{
@@ -995,15 +1017,13 @@ li{
 
 @media only screen and (max-width: 768px) {
     #topDiv{
-        background-image: none;
-        background-color: black;
         height: 100%;
     }
 
     #firstDiv{
         width: 80%;
         /* height: 50vh!important; */
-        color: rgb(255, 255, 255);
+        
         border-radius: 18px;
         text-align: center;
         /* display: block; */
