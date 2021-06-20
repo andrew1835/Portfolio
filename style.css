@@ -526,6 +526,7 @@ li{
     /* padding-top: 4vh; */
     font-weight: 600;
     margin-bottom: 5vh;
+    margin-top: 6vh;
 }
 
 .cardContainer{
@@ -898,7 +899,7 @@ li{
 
 #contactTitle{
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 9vh;
     margin-bottom: 3vh;
     font-weight: 600;
 }
