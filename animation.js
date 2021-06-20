@@ -11,7 +11,7 @@
 
 
 var floatUpRandomTime = (Math.random() * 10) + 8
-// The order is orange, yellow, green, blue, purple, pink
+// The order is blue, darker green, lighter green, blue, green, green
 var colorArray = ["#D4F1F9", "#CDEFE7", "#D3F1DC", "#D4F1F9", "#CDEFE7", "#D3F1DC"]
 var randomColor = colorArray[Math.floor(Math.random() * 7)]
 var randomColorTwo = colorArray[Math.floor(Math.random() * 7)]
