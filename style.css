@@ -1025,7 +1025,7 @@ li{
 
     #introH{
         margin-top: 0;
-        padding-top: 13vh;
+        padding-top: 3vh;
     }
 
     #firstDiv{
@@ -1383,7 +1383,7 @@ li{
         align-items: center;
         margin-top: 15vh;
         margin-bottom: 20vh;
-        padding-bottom: 10vh;
+        padding-bottom: 5vh;
         border-radius: 20px;
         box-sizing: border-box;
     }
