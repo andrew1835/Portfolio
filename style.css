@@ -229,7 +229,8 @@ li{
 } */
 
 #aboutMeTitle{
-    margin-top: 6vh;
+    opacity: 0;
+    margin-top: 14vh;
     text-align: center;
     margin-bottom: 4vh;
     font-weight: 600;
@@ -249,7 +250,10 @@ li{
 }
 
 #bio{
+    opacity: 0%;
     font-weight: 600;
+    margin-right: 10vw;
+    
 }
 
 #descriptionOfMe{

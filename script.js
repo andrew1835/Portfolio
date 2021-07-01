@@ -8,12 +8,25 @@ var modalClose = document.getElementById("modalWindow")
 var close = document.getElementById("xIcon")
 
 $(document).ready(function () {
+    var idArea = document.getElementById("bio")
+    var aboutTitle = document.getElementById("aboutMeTitle")
 
     $(window).scroll(function () {
         //if you hard code, then use console
         //.log to determine when you want the 
         //nav bar to stick.  
-        console.log($(window).innerHeight())
+        // console.log(idArea.scrollTop)
+        // console.log($(window).innerHeight())
+        var note = idArea.getBoundingClientRect().top
+        var aboutNote = aboutTitle.getBoundingClientRect().top
+        // console.log(note)
+        // console.log(aboutNote)
+        if (note < 850) {
+            idArea.classList.add("actibate")
+        }
+        if (aboutNote < 1500) {
+            aboutTitle.classList.add("aboutMeTitleMove")
+        }
         if ($(window).scrollTop() > $(window).innerHeight()) {
             $('#navBar').addClass('navbar-fixed');
         }
