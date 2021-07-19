@@ -19,12 +19,13 @@ $(document).ready(function () {
         // console.log($(window).innerHeight())
         var note = idArea.getBoundingClientRect().top
         var aboutNote = aboutTitle.getBoundingClientRect().top
-        // console.log(note)
+        console.log("22: " + note)
+        console.log("height: " + window.innerHeight)
         // console.log(aboutNote)
-        if (note < 850) {
+        if (note < window.innerHeight) {
             idArea.classList.add("actibate")
         }
-        if (aboutNote < 1500) {
+        if (aboutNote < window.innerHeight) {
             aboutTitle.classList.add("aboutMeTitleMove")
         }
         if ($(window).scrollTop() > $(window).innerHeight()) {
@@ -99,48 +100,6 @@ window.addEventListener("click", function close5(event) {
         $("#content").removeClass('bodyBlur');
     }
 })
-
-
-// MOBILE
-
-// window.addEventListener("touchend", function close1(event) {
-//     if (event.target == modal || event.target == close) {
-//         modal.style.display = "none"
-//         $("#content").removeClass('bodyBlur');
-//     }
-// })
-
-
-// window.addEventListener("touchend", function close2(event) {
-//     if (event.target == modal2 || event.target == document.getElementById("xIcon2")) {
-//         modal2.style.display = "none"
-//         $("#content").removeClass('bodyBlur');
-//     }
-// })
-
-// window.addEventListener("touchend", function close3(event) {
-//     if (event.target == modal3 || event.target == document.getElementById("xIcon3")) {
-//         modal3.style.display = "none"
-//         $("#content").removeClass('bodyBlur');
-//     }
-// })
-
-// window.addEventListener("touchend", function close4(event) {
-//     if (event.target == modal4 || event.target == document.getElementById("xIcon4")) {
-//         modal4.style.display = "none"
-//         $("#content").removeClass('bodyBlur');
-//     }
-// })
-
-
-// window.addEventListener("touchend", function close5(event) {
-//     if (event.target == modal5 || event.target == document.getElementById("xIcon5")) {
-//         modal5.style.display = "none"
-//         $("#content").removeClass('bodyBlur');
-//     }
-// })
-
-
 
 
 
