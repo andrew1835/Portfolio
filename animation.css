@@ -15,6 +15,19 @@
     line-height: 150%;
 } */
 
+
+/* Elements you'll add animations to (desktop instructions. Will figure out mobile later):
+1. Programming skills title will come in from right
+2. Skill badges will fade in from left to right
+3. Achievements pre-coding will come in from right
+4. Achievements icon will fade in from left to right 
+5. Parent div for Portfolio section will be invisible and then will come up from bottom once you scroll to it (just like About section)
+6. Project cards will fade in from left to right
+7. Note at bottom of project section will come in from left
+8. Resume button at bottom of project section will come in from left, GitHub button will come in from right
+9. Parent div for Contact section will be invisible and then will come up from bottom once you scroll to it*/
+
+
 .circle{
 
     /* width: 30px;
@@ -29,14 +42,14 @@
     opacity: 0;
 }
 
-.actibate{
+.activate{
     transition: 2s;
     opacity: 100%!important;
     margin-right: 0!important;
    
 }
 
-.aboutMeTitleMove{
+.aboutMeMove{
     margin-top: 6vh!important;
     transition: 1s;
     opacity: 100%!important;

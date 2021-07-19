@@ -9,7 +9,7 @@ var close = document.getElementById("xIcon")
 
 $(document).ready(function () {
     var idArea = document.getElementById("bio")
-    var aboutTitle = document.getElementById("aboutMeTitle")
+    var aboutTitle = document.getElementById("aboutMe")
 
     $(window).scroll(function () {
         //if you hard code, then use console
@@ -23,10 +23,10 @@ $(document).ready(function () {
         console.log("height: " + window.innerHeight)
         // console.log(aboutNote)
         if (note < window.innerHeight) {
-            idArea.classList.add("actibate")
+            idArea.classList.add("activate")
         }
         if (aboutNote < window.innerHeight) {
-            aboutTitle.classList.add("aboutMeTitleMove")
+            aboutTitle.classList.add("aboutMeMove")
         }
         if ($(window).scrollTop() > $(window).innerHeight()) {
             $('#navBar').addClass('navbar-fixed');
