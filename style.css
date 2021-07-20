@@ -249,13 +249,11 @@ li{
 #profilePicture{
     max-width: 25vw;
     border-radius: 118px;
+    margin-bottom: 3vh;
 }
 
 #bio{
-    opacity: 0%;
     font-weight: 600;
-    margin-right: 10vw;
-    
 }
 
 #descriptionOfMe{
@@ -263,7 +261,8 @@ li{
     width: 90%;
     text-align: center;
     margin: 0 auto;
-    margin-top: 5vh;
+    margin-top: 10vh;
+    opacity: 0%;
 }
 
 #certificateLink{
@@ -290,7 +289,9 @@ li{
 }
 
 #programmingSkills{
+    opacity: 0%;
     font-weight: 600;
+    margin-top: 10vh;
 }
 
 #skillIcon{
@@ -306,6 +307,10 @@ li{
 
 .skillDescription{
     display: inline-block;
+}
+
+.sDIOne, .sDITwo, .sDIThree, .sDIFour, .sDIFive{
+    opacity: 0;
 }
 
 .skillItem{
@@ -452,6 +457,11 @@ li{
     margin-left: 0%;
     width: 47%;
     text-align: center;
+}
+
+#achievementsSection{
+    opacity: 0;
+    margin-top: 10vh;
 }
 
 #achievementsTitle{

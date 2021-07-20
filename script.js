@@ -8,8 +8,15 @@ var modalClose = document.getElementById("modalWindow")
 var close = document.getElementById("xIcon")
 
 $(document).ready(function () {
-    var idArea = document.getElementById("bio")
+    var idArea = document.getElementById("descriptionOfMe")
     var aboutTitle = document.getElementById("aboutMe")
+    var skillsTitle = document.getElementById("programmingSkills")
+    var skillDescriptionOne = document.getElementsByClassName("skillDescription")[0]
+    var skillDescriptionTwo = document.getElementsByClassName("skillDescription")[1]
+    var skillDescriptionThree = document.getElementsByClassName("skillDescription")[2]
+    var skillDescriptionFour = document.getElementsByClassName("skillDescription")[3]
+    var skillDescriptionFive = document.getElementsByClassName("skillDescription")[4]
+    var achievementsSection = document.getElementById("achievementsSection")
 
     $(window).scroll(function () {
         //if you hard code, then use console
@@ -19,14 +26,30 @@ $(document).ready(function () {
         // console.log($(window).innerHeight())
         var note = idArea.getBoundingClientRect().top
         var aboutNote = aboutTitle.getBoundingClientRect().top
-        console.log("22: " + note)
-        console.log("height: " + window.innerHeight)
+        var skillsTitleNote = skillsTitle.getBoundingClientRect().top
+        var skillIcons = skillDescriptionOne.getBoundingClientRect().top
+        var achievementsTop = achievementsSection.getBoundingClientRect().top
+        // console.log("22: " + note)
+        // console.log("height: " + window.innerHeight)
         // console.log(aboutNote)
         if (note < window.innerHeight) {
-            idArea.classList.add("activate")
+            idArea.classList.add("activateToTop")
         }
         if (aboutNote < window.innerHeight) {
             aboutTitle.classList.add("aboutMeMove")
+        }
+        if (skillsTitleNote < window.innerHeight) {
+            skillsTitle.classList.add("activateToTop")
+        }
+        if (skillIcons < window.innerHeight) {
+            skillDescriptionOne.classList.add("sDOne")
+            skillDescriptionTwo.classList.add("sDTwo")
+            skillDescriptionThree.classList.add("sDThree")
+            skillDescriptionFour.classList.add("sDFour")
+            skillDescriptionFive.classList.add("sDFive")
+        }
+        if (achievementsTop < window.innerHeight) {
+            achievementsSection.classList.add("activateToTop")
         }
         if ($(window).scrollTop() > $(window).innerHeight()) {
             $('#navBar').addClass('navbar-fixed');
