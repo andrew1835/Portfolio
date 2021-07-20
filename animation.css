@@ -21,8 +21,8 @@
 2. TODO: DONE: Skill badges will fade in from left to right
 3. TODO: DONE: Achievements pre-coding will come in from right
 4. TODO: DONE: Achievements icon will fade in from left to right 
-5. Parent div for Portfolio section will be invisible and then will come up from bottom once you scroll to it (just like About section)
-6. Project cards will fade in from left to right (use an interval instead of using different transition times)
+5. TODO: DONE: Parent div for Portfolio section will be invisible and then will come up from bottom once you scroll to it (just like About section)
+6. TODO: DONE: Project cards will fade in from left to right (use an interval instead of using different transition times)
 7. Note at bottom of project section will come in from left
 8. Resume button at bottom of project section will come in from left, GitHub button will come in from right
 9. Parent div for Contact section will be invisible and then will come up from bottom once you scroll to it*/
@@ -78,6 +78,11 @@
 .sDFive {
     opacity: 100%!important;
     transition: 3.5s;
+}
+
+.cardActivate{
+    opacity: 100%!important;
+    transition: 2s;
 }
 
 

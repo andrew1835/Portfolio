@@ -7,6 +7,7 @@ var modal5 = document.getElementById("modal5")
 var modalClose = document.getElementById("modalWindow")
 var close = document.getElementById("xIcon")
 
+
 $(document).ready(function () {
     var idArea = document.getElementById("descriptionOfMe")
     var aboutTitle = document.getElementById("aboutMe")
@@ -17,6 +18,14 @@ $(document).ready(function () {
     var skillDescriptionFour = document.getElementsByClassName("skillDescription")[3]
     var skillDescriptionFive = document.getElementsByClassName("skillDescription")[4]
     var achievementsSection = document.getElementById("achievementsSection")
+    var portfolio = document.getElementById("portfolio")
+    var topCardContainer = document.getElementsByClassName("cardContainer")[0]
+    var cardOne = document.getElementsByClassName("card")[0]
+    var cardTwo = document.getElementsByClassName("card")[1]
+    var cardThree = document.getElementsByClassName("card")[2]
+    var cardFour = document.getElementsByClassName("cardBottom")[0]
+    var cardFive = document.getElementsByClassName("cardBottom")[1]
+    var bottomCardContainer = document.getElementsByClassName("cardContainer2")[0]
 
     $(window).scroll(function () {
         //if you hard code, then use console
@@ -29,6 +38,10 @@ $(document).ready(function () {
         var skillsTitleNote = skillsTitle.getBoundingClientRect().top
         var skillIcons = skillDescriptionOne.getBoundingClientRect().top
         var achievementsTop = achievementsSection.getBoundingClientRect().top
+        var portfolioTop = portfolio.getBoundingClientRect().top
+        var topCCTop = topCardContainer.getBoundingClientRect().top
+        var bottomCCTop = bottomCardContainer.getBoundingClientRect().top
+
         // console.log("22: " + note)
         // console.log("height: " + window.innerHeight)
         // console.log(aboutNote)
@@ -50,6 +63,24 @@ $(document).ready(function () {
         }
         if (achievementsTop < window.innerHeight) {
             achievementsSection.classList.add("activateToTop")
+        }
+        if (portfolioTop < window.innerHeight) {
+            portfolio.classList.add("activateToTop")
+        }
+        if (topCCTop < window.innerHeight) {
+            cardOne.classList.add("cardActivate")
+            setTimeout(function () {
+                cardTwo.classList.add("cardActivate")
+            }, 500)
+            setTimeout(function () {
+                cardThree.classList.add("cardActivate")
+            }, 1000)
+        }
+        if (bottomCCTop < window.innerHeight) {
+            cardFour.classList.add("cardActivate")
+            setTimeout(function () {
+                cardFive.classList.add("cardActivate")
+            }, 500)
         }
         if ($(window).scrollTop() > $(window).innerHeight()) {
             $('#navBar').addClass('navbar-fixed');
