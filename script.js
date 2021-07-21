@@ -6,6 +6,10 @@ var modal4 = document.getElementById("modal4")
 var modal5 = document.getElementById("modal5")
 var modalClose = document.getElementById("modalWindow")
 var close = document.getElementById("xIcon")
+var homeButton = document.getElementById("homeButton")
+var aboutButton = document.getElementById("aboutButton")
+var portfolioButton = document.getElementById("portfolioButton")
+var contactButton = document.getElementById("contactButton")
 
 
 $(document).ready(function () {
@@ -26,6 +30,7 @@ $(document).ready(function () {
     var cardFour = document.getElementsByClassName("cardBottom")[0]
     var cardFive = document.getElementsByClassName("cardBottom")[1]
     var bottomCardContainer = document.getElementsByClassName("cardContainer2")[0]
+    var contact = document.getElementById("contact")
 
     $(window).scroll(function () {
         //if you hard code, then use console
@@ -41,12 +46,26 @@ $(document).ready(function () {
         var portfolioTop = portfolio.getBoundingClientRect().top
         var topCCTop = topCardContainer.getBoundingClientRect().top
         var bottomCCTop = bottomCardContainer.getBoundingClientRect().top
+        var contactTop = contact.getBoundingClientRect().top
 
         // console.log("22: " + note)
         // console.log("height: " + window.innerHeight)
         // console.log(aboutNote)
         if (note < window.innerHeight) {
             idArea.classList.add("activateToTop")
+        }
+        if (aboutNote < window.innerHeight / 2 && !(portfolioTop < window.innerHeight / 2)) {
+            aboutButton.classList.add("navButtonSection")
+            portfolioButton.classList.remove("navButtonSection")
+        }
+        if (portfolioTop < window.innerHeight / 2 && !(contactTop < window.innerHeight / 2)) {
+            portfolioButton.classList.add("navButtonSection")
+            aboutButton.classList.remove("navButtonSection")
+            contactButton.classList.remove("navButtonSection")
+        }
+        if (contactTop < window.innerHeight / 2) {
+            contactButton.classList.add("navButtonSection")
+            portfolioButton.classList.remove("navButtonSection")
         }
         if (aboutNote < window.innerHeight) {
             aboutTitle.classList.add("aboutMeMove")
