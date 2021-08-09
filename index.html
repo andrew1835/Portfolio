@@ -133,9 +133,10 @@
                             <img class="skillIconClass" src="./images/nodeIcon.webp" alt="Node.js icon">
                             <p>Node.js</p>
                         </div>
-                        <h5 id="additionalInfo">*Additionally, I have experience with Express.js, MySQL/NoSQL, MongoDB,
+                        <h5 id="additionalInfo">*Additionally, I have experience with Next.js, Express.js, MySQL/NoSQL,
+                            MongoDB, Firestore DB,
                             JSON, jQuery and a number of CSS
-                            Frameworks, including Bootstrap, Material
+                            Frameworks, including Bootstrap, Tailwind CSS, Material
                             UI, Materialize, etc.</h5>
                     </div>
 
@@ -241,25 +242,33 @@
                 <h1 class="sectionTitles" id="portfolioTitle">Portfolio</h1>
 
                 <div class="cardContainer">
-                    <div class="card card1">
-                        <h2 class="cardTitle">Litzia Storefront</h2>
-                        <img src="./images/litziaMobileHome.png" loading="lazy" alt="" class="cardImage"
-                            onclick="showModal()">
+                    <div class="card">
+                        <h2 class="cardTitle">Functional Facebook Clone</h2>
+                        <img src="./images/FacebookMobile.png" loading="lazy"
+                            alt="Picture of mobile view of Facebook clone" class="cardImage" onclick="showModal()">
                         <h2 class="learnMore">Learn More</h2>
                     </div>
 
-                    <div class="card">
-                        <h2 class="cardTitle">Memory Bank</h2>
-                        <img src="./images/Memorybank.jpg" loading="lazy" alt="" class="cardImage"
+                    <div class="card card1">
+                        <h2 class="cardTitle">Litzia Storefront</h2>
+                        <img src="./images/litziaMobileHome.png" loading="lazy"
+                            alt="picture of mobile view of Litzia storefront homepage" class="cardImage"
                             onclick="showModal2()">
                         <h2 class="learnMore">Learn More</h2>
                     </div>
 
                     <div class="card">
+                        <h2 class="cardTitle">Memory Bank</h2>
+                        <img src="./images/Memorybank.jpg" loading="lazy" alt="Picture of Memory Bank home page"
+                            class="cardImage" onclick="showModal3()">
+                        <h2 class="learnMore">Learn More</h2>
+                    </div>
+
+                    <!-- <div class="card">
                         <h2 class="cardTitle">This Portfolio Itself!</h2>
                         <img src="./images/pMobile.png" loading="lazy" alt="" class="cardImage" onclick="showModal3()">
                         <h2 class="learnMore">Learn More</h2>
-                    </div>
+                    </div> -->
                 </div>
 
 
@@ -337,24 +346,75 @@
 
 
 
+
     <div id="modal1">
         <div id="modal1Content">
             <div id="carouselBackground"></div>
             <div id="carousel">
                 <div class="carouselPhotos">
-                    <img src="./images/litizaTopHome.png" loading="lazy" alt="top of homepage on desktop view"
+                    <img src="./images/FacebookDesktop.png" loading="lazy" alt="Homepage on desktop view"
                         class="photo landscape">
-                    <img src="./images/litziaMiddleHome.png" loading="lazy" alt="middle of homepage on desktop view"
-                        class="photo landscape">
-                    <img src="./images/l-z-mount-bjh.herokuapp.com_ (1).png" loading="lazy"
-                        alt="full homepage on desktop view" class="photo">
-                    <img src="./images/litziaMobileHome.png" loading="lazy" alt="mobile view of homepage" class="photo">
-                    <img src="./images/litziaComputerPage.png" loading="lazy"
-                        alt="page when you click on a computer from the 'Computer' page" class="photo landscape">
+                    <img src="./images/FacebookHome.png" loading="lazy" alt="Login page" class="photo landscape">
+                    <img src="./images/FacebookMobile.png" loading="lazy" alt="Homepage on mobile view" class="photo">
                 </div>
                 <h3 id="xIcon" onclick="close1()">✖</h3>
                 <h2 class="arrows" id="leftArrow">←</h2>
                 <h2 class="arrows" id="rightArrow">→</h2>
+            </div>
+
+            <div id="modal1Info">
+                <div class="summary">
+                    <h3 class="info">Summary</h3>
+                    <p>Full-Stack Facebook Clone with functional user login and a functional live feed for posting</p>
+                </div>
+                <div class="role">
+                    <h3 class="info">Role</h3>
+                    <p>Sole Developer</p>
+                    <h3 class="links">Links</h3>
+                    <a href="https://functional-facebook-clone.vercel.app/" class="portfolioLinks" target="_blank">
+                        <p>Deployed Application</p>
+                    </a>
+                    <a href="https://github.com/andrew1835/functional-Facebook-clone" class="portfolioLinks"
+                        target="_blank">
+                        <p>GitHub repo</p>
+                    </a>
+                </div>
+                <div class="languages">
+                    <h3 class="info">Languages/Tools</h3>
+                    <ul id="listSection">
+                        <li class="languageList">JavaScript</li>
+                        <li class="languageList">React.js</li>
+                        <li class="languageList">Node.js</li>
+                        <li class="languageList">Tailwind CSS</li>
+                        <li class="languageList">Firestore DB</li>
+                        <li class="languageList">Node.js</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="modal2">
+        <div id="modal1Content">
+            <div id="carouselBackground"></div>
+            <div id="carousel">
+                <div class="carouselPhotos">
+                    <img src="./images/litizaTopHome.png" loading="lazy" alt="top of homepage on desktop view"
+                        class="photo2 landscape">
+                    <img src="./images/litziaMiddleHome.png" loading="lazy" alt="middle of homepage on desktop view"
+                        class="photo2 landscape">
+                    <img src="./images/l-z-mount-bjh.herokuapp.com_ (1).png" loading="lazy"
+                        alt="full homepage on desktop view" class="photo2">
+                    <img src="./images/litziaMobileHome.png" loading="lazy" alt="mobile view of homepage"
+                        class="photo2">
+                    <img src="./images/litziaComputerPage.png" loading="lazy"
+                        alt="page when you click on a computer from the 'Computer' page" class="photo2 landscape">
+                </div>
+                <h3 id="xIcon2" onclick="close2()">✖</h3>
+                <h2 class="arrows" id="leftArrow2">←</h2>
+                <h2 class="arrows" id="rightArrow2">→</h2>
             </div>
 
             <div id="modal1Info">
@@ -394,21 +454,21 @@
 
 
 
-    <div id="modal2">
+    <div id="modal3">
         <div id="modal1Content">
             <div id="carouselBackground"></div>
             <div id="carousel">
                 <div class="carouselPhotos">
-                    <img src="./images/Memorybank.jpg" loading="lazy" alt="whole home page mobile view" class="photo2">
-                    <img src="./images/mbhome.jpg" loading="lazy" alt="top of home page" class="photo2 landscape">
+                    <img src="./images/Memorybank.jpg" loading="lazy" alt="whole home page mobile view" class="photo3">
+                    <img src="./images/mbhome.jpg" loading="lazy" alt="top of home page" class="photo3 landscape">
                     <img src="./images/mbhomebott.jpg" loading="lazy" alt="bottom of home page"
-                        class="photo2 landscape">
+                        class="photo3 landscape">
                     <img src="https://github.com/andrew1835/memoryBank/raw/dev/public/images/memories.png"
-                        loading="lazy" alt="history page" class="photo2">
+                        loading="lazy" alt="history page" class="photo3">
                 </div>
-                <h3 id="xIcon2" onclick="close2()">✖</h3>
-                <h2 class="arrows" id="leftArrow2">←</h2>
-                <h2 class="arrows" id="rightArrow2">→</h2>
+                <h3 id="xIcon3" onclick="close3()">✖</h3>
+                <h2 class="arrows" id="leftArrow3">←</h2>
+                <h2 class="arrows" id="rightArrow3">→</h2>
             </div>
 
             <div id="modal1Info">
@@ -450,7 +510,7 @@
 
 
 
-    <div id="modal3">
+    <!-- <div id="modal3">
         <div id="modal1Content">
             <div id="carouselBackground"></div>
             <div id="carousel">
@@ -494,7 +554,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 

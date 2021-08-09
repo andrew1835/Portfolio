@@ -608,12 +608,13 @@ li{
 }
 
 .cardImage{
-    margin-left: 5%;
+    margin-left: 4%;
     min-height: 68%;
     max-height: 83%;
     width: 90%;
     margin-top: 2%;
     cursor: pointer;
+    border: 1px solid rgb(100, 100, 100);
     box-sizing: border-box;
     position: relative;
     z-index: 2;
