@@ -1048,6 +1048,21 @@ li{
     font-size: medium;
 }
 
+@media only screen and (max-width: 1000px){
+    .resume{
+        display: none;
+       }
+   
+       #ghIcon{
+        display: none;
+        }
+   
+        #linkedInIcon{
+           display: none;
+        }
+   
+}
+
 @media only screen and (max-width: 768px) {
     #topDiv{
         height: 100vh
@@ -1110,7 +1125,7 @@ li{
     }
     
 
-    .resume{
+    /* .resume{
      display: none;
     }
 
@@ -1120,7 +1135,7 @@ li{
 
      #linkedInIcon{
         display: none;
-     }
+     } */
 
      #leftAbout{
         float: none;
