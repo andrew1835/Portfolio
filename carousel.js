@@ -4,7 +4,7 @@
 //     var rightArrow = document.getElementById("rightArrow")
 //     var photos = document.getElementsByClassName("photo")
 //     var photoLength = photos.length
-//     var currentSlide = 0
+//     var currentSlide = 0;
 //     console.log("number of photos: " + photoLength)
 
 //     // I don't think you need the initial, next, and prev unless you want to do animation stuff and transitions
