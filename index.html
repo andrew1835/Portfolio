@@ -317,10 +317,19 @@
                 <h1 class="sectionTitles" id="contactTitle">Contact</h1>
                 <h3 id="contactMe">Feel free to reach out by either
                     using the form below or by messaging me at my email, LinkedIn, or GitHub</h3>
-                <form action="https://mailthis.to/andrew18" method="POST" encType="multipart/form-data" id="formId">
+                <!-- <form action="https://mailthis.to/andrew18" method="POST" encType="multipart/form-data" id="formId">
                     <input type="text" name="name" placeholder="Name" class="contactField">
                     <input type="email" name="_replyto" placeholder="Your email" class="contactField">
                     <textarea name="message" placeholder="Message" class="contactField contactMessage"></textarea>
+                    <input type="submit" value="Send" id="sendBtn">
+                </form> -->
+
+                <form action="https://formspree.io/f/xyylbklj" method="POST" id="formId">
+                    <input type="text" name="name" placeholder="Your name" class="contactField">
+                    <input type="email" name="_replyto" placeholder="Your email" class="contactField">
+                    <textarea name="message" placeholder="Message" class="contactField contactMessage"></textarea>
+
+                    <!-- your other form fields go here -->
                     <input type="submit" value="Send" id="sendBtn">
                 </form>
 
