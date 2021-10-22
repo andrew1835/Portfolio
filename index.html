@@ -53,16 +53,16 @@
         </div>
 
         <div id="navBar">
-            <a href="#topDiv">
+            <a href="#topDiv" class="navLink">
                 <h3 class="navButton" id="homeButton">Home</h3>
             </a>
-            <a href="#placeHolder1">
+            <a href="#placeHolder1" class="navLink">
                 <h3 class="navButton notMain" id="aboutButton">About</h3>
             </a>
-            <a href="#placeHolder">
+            <a href="#placeHolder" class="navLink">
                 <h3 class="navButton notMain" id="portfolioButton">Portfolio</h3>
             </a>
-            <a href="#contact">
+            <a href="#contact" class="navLink">
                 <h3 class="navButton notMain" id="contactButton">Contact</h3>
             </a>
             <div id="rightNav">
@@ -245,22 +245,23 @@
                     <div class="card">
                         <h2 class="cardTitle">Functional Facebook Clone</h2>
                         <img src="./images/FacebookMobile.png" loading="lazy"
-                            alt="Picture of mobile view of Facebook clone" class="cardImage" onclick="showModal()">
+                            alt="Picture of mobile view of Facebook clone" class="cardImage" data-name="1"
+                            onclick="showModal(event)">
                         <h2 class="learnMore">Learn More</h2>
                     </div>
 
                     <div class="card card1">
                         <h2 class="cardTitle">Litzia Storefront</h2>
                         <img src="./images/litziaMobileHome.png" loading="lazy"
-                            alt="picture of mobile view of Litzia storefront homepage" class="cardImage"
-                            onclick="showModal2()">
+                            alt="picture of mobile view of Litzia storefront homepage" class="cardImage" data-name="2"
+                            onclick="showModal(event)">
                         <h2 class="learnMore">Learn More</h2>
                     </div>
 
                     <div class="card">
                         <h2 class="cardTitle">Memory Bank</h2>
                         <img src="./images/Memorybank.jpg" loading="lazy" alt="Picture of Memory Bank home page"
-                            class="cardImage" onclick="showModal3()">
+                            class="cardImage" data-name="3" onclick="showModal(event)">
                         <h2 class="learnMore">Learn More</h2>
                     </div>
 
@@ -279,7 +280,7 @@
                     <div class="card1Bottom cardBottom">
                         <h2 class="cardTitle">NoteTaker</h2>
                         <img src="./images/noteTaker.png" loading="lazy" alt="Note Taker homepage"
-                            class="cardImageBottom" onclick="showModal4()">
+                            class="cardImageBottom" data-name="4" onclick="showModal(event)">
                         <h2 class="learnMore">Learn More</h2>
 
                     </div>
@@ -288,7 +289,7 @@
                         <h2 class="cardTitle">In The Moment</h2>
                         <img src="./images/inTheMoment.png" loading="lazy"
                             alt="home page of In The Moment application after looking up events in Seattle on April 27th"
-                            class="cardImageBottom" onclick="showModal5()">
+                            class="cardImageBottom" data-name="5" onclick="showModal(event)">
                         <h2 class="learnMore">Learn More</h2>
 
                     </div>
@@ -301,7 +302,7 @@
                 a more extensive look
                 at my experience, feel free to take a look at my Resume or my GitHub:</h4>
             <div id="resAndGit">
-                <a href="images/Andrew_Coding_Resume copy.pdf" target="_blank">
+                <a href="images/UpdatedResume.pdf" target="_blank">
                     <h3 class="navButton resume2">Resume</h3>
                 </a>
                 <a href="https://github.com/andrew1835" id="gitHubRef" target="_blank"><img
@@ -356,19 +357,19 @@
 
 
 
-    <div id="modal1">
+    <div id="modal1" data-modal="1" class="modal">
         <div id="modal1Content">
             <div id="carouselBackground"></div>
             <div id="carousel">
                 <div class="carouselPhotos">
                     <img src="./images/FacebookDesktop.png" loading="lazy" alt="Homepage on desktop view"
-                        class="photo landscape">
-                    <img src="./images/FacebookHome.png" loading="lazy" alt="Login page" class="photo landscape">
-                    <img src="./images/FacebookMobile.png" loading="lazy" alt="Homepage on mobile view" class="photo">
+                        class="photo1 landscape">
+                    <img src="./images/FacebookHome.png" loading="lazy" alt="Login page" class="photo1 landscape">
+                    <img src="./images/FacebookMobile.png" loading="lazy" alt="Homepage on mobile view" class="photo1">
                 </div>
-                <h3 id="xIcon" onclick="close1()">✖</h3>
-                <h2 class="arrows" id="leftArrow">←</h2>
-                <h2 class="arrows" id="rightArrow">→</h2>
+                <h3 class="xIcon" data-modal="1">✖</h3>
+                <h2 class="arrows" id="leftArrow1" data-arrow="1">←</h2>
+                <h2 class="arrows" id="rightArrow1" data-arrow="1">→</h2>
             </div>
 
             <div id="modal1Info">
@@ -405,7 +406,7 @@
     </div>
 
 
-    <div id="modal2">
+    <div id="modal2" data-modal="2" class="modal">
         <div id="modal1Content">
             <div id="carouselBackground"></div>
             <div id="carousel">
@@ -421,9 +422,9 @@
                     <img src="./images/litziaComputerPage.png" loading="lazy"
                         alt="page when you click on a computer from the 'Computer' page" class="photo2 landscape">
                 </div>
-                <h3 id="xIcon2" onclick="close2()">✖</h3>
-                <h2 class="arrows" id="leftArrow2">←</h2>
-                <h2 class="arrows" id="rightArrow2">→</h2>
+                <h3 class="xIcon" data-modal="2">✖</h3>
+                <h2 class="arrows" id="leftArrow2" data-arrow="2">←</h2>
+                <h2 class="arrows" id="rightArrow2" data-arrow="2">→</h2>
             </div>
 
             <div id="modal1Info">
@@ -463,7 +464,7 @@
 
 
 
-    <div id="modal3">
+    <div id="modal3" data-modal="3" class="modal">
         <div id="modal1Content">
             <div id="carouselBackground"></div>
             <div id="carousel">
@@ -475,9 +476,9 @@
                     <img src="https://github.com/andrew1835/memoryBank/raw/dev/public/images/memories.png"
                         loading="lazy" alt="history page" class="photo3">
                 </div>
-                <h3 id="xIcon3" onclick="close3()">✖</h3>
-                <h2 class="arrows" id="leftArrow3">←</h2>
-                <h2 class="arrows" id="rightArrow3">→</h2>
+                <h3 class="xIcon" data-modal="3">✖</h3>
+                <h2 class="arrows" id="leftArrow3" data-arrow="3">←</h2>
+                <h2 class="arrows" id="rightArrow3" data-arrow="3">→</h2>
             </div>
 
             <div id="modal1Info">
@@ -527,7 +528,7 @@
                     <img src="./images/pDesktop.png" loading="lazy" alt="" class="photo3 landscape">
                     <img src="./images/pMobile.png" loading="lazy" alt="" class="photo3">
                 </div>
-                <h3 id="xIcon3" onclick="close3()">✖</h3>
+                <h3 class="xIcon" >✖</h3>
                 <h2 class="arrows" id="leftArrow3">←</h2>
                 <h2 class="arrows" id="rightArrow3">→</h2>
             </div>
@@ -568,7 +569,7 @@
 
 
 
-    <div id="modal4">
+    <div id="modal4" data-modal="4" class="modal">
         <div id="modal1Content">
             <div id="carouselBackground"></div>
             <div id="carousel">
@@ -579,9 +580,9 @@
                         alt="application after I've saved a note. You can see  the saved note on the left."
                         class="photo4 landscape">
                 </div>
-                <h3 id="xIcon4" onclick="close4()">✖</h3>
-                <h2 class="arrows" id="leftArrow4">←</h2>
-                <h2 class="arrows" id="rightArrow4">→</h2>
+                <h3 class="xIcon" data-modal="4">✖</h3>
+                <h2 class="arrows" id="leftArrow4" data-arrow="4">←</h2>
+                <h2 class="arrows" id="rightArrow4" data-arrow="4">→</h2>
             </div>
 
             <div id="modal1Info">
@@ -620,7 +621,7 @@
 
 
 
-    <div id="modal5">
+    <div id="modal5" data-modal="5" class="modal">
         <div id="modal1Content">
             <div id="carouselBackground"></div>
             <div id="carousel">
@@ -632,9 +633,9 @@
                         class="photo5 landscape">
                     <img src="./images/ITMMobile.png" loading="lazy" alt="mobile view" class="photo5">
                 </div>
-                <h3 id="xIcon5" onclick="close5()">✖</h3>
-                <h2 class="arrows" id="leftArrow5">←</h2>
-                <h2 class="arrows" id="rightArrow5">→</h2>
+                <h3 class="xIcon" data-modal="5">✖</h3>
+                <h2 class="arrows" id="leftArrow5" data-arrow="5">←</h2>
+                <h2 class="arrows" id="rightArrow5" data-arrow="5">→</h2>
             </div>
 
             <div id="modal1Info">

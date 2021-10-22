@@ -1,6 +1,4 @@
 
-
-
 // TODO:
 // 1. Make the circles delete once they reach the top (to do this, you set the setTimeout time to be 1 second less than the animation duration) 
 // ABOVE IS DONE
@@ -10,267 +8,56 @@
 // 4. Make the circles delete when you hover over them
 
 
-var floatUpRandomTime = (Math.random() * 10) + 8
 // The order is blue, darker green, lighter green, blue, green, green
 var colorArray = ["#D4F1F9", "#CDEFE7", "#D3F1DC", "#D4F1F9", "#CDEFE7", "#D3F1DC"]
-var randomColor = colorArray[Math.floor(Math.random() * 7)]
-var randomColorTwo = colorArray[Math.floor(Math.random() * 7)]
-var randomColorThree = colorArray[Math.floor(Math.random() * 7)]
-var randomColorFour = colorArray[Math.floor(Math.random() * 7)]
-var randomColorFive = colorArray[Math.floor(Math.random() * 7)]
-var randomColorSix = colorArray[Math.floor(Math.random() * 7)]
+
 var topDiv = document.getElementById("topDiv")
-
-
-
-
-var circleOne = document.createElement("div")
-circleOne.className = "circle"
-topDiv.append(circleOne)
-var randomPercentRightTwo = (Math.random() * 90) + 5
-circleOne.setAttribute("style", `right: ${randomPercentRightTwo}%`)
-circleOne.style.background = `${randomColor}`
-var randomSize = Math.floor(Math.random() * 75) + 18
-circleOne.style.width = randomSize + "px"
-circleOne.style.height = randomSize + "px"
-var randomDuration = Math.floor(Math.random() * 14) + 12
-circleOne.style.animationDuration = randomDuration + "s"
-console.log(randomDuration)
-setTimeout(function () {
-    circleOne.remove()
-}, randomDuration * 1000)
-setTimeout(function () {
-    circleOne.style.opacity = 1
-}, 1500)
-circleOne.addEventListener("mouseover", function () {
-    circleOne.style.background = "#f795c3"
-    circleOne.style.opacity = 0
-    console.log("hover")
-})
-
-var circleTwo = document.createElement("div")
-circleTwo.className = "circle"
-topDiv.append(circleTwo)
-var randomPercentRightTwo = (Math.random() * 90) + 5
-circleTwo.setAttribute("style", `right: ${randomPercentRightTwo}%`)
-circleTwo.style.background = `${randomColorTwo}`
-var randomSizeTwo = Math.floor(Math.random() * 75) + 18
-circleTwo.style.width = randomSizeTwo + "px"
-circleTwo.style.height = randomSizeTwo + "px"
-var randomDurationTwo = Math.floor(Math.random() * 14) + 12
-circleTwo.style.animationDuration = randomDurationTwo + "s"
-setTimeout(function () {
-    circleTwo.remove()
-}, randomDurationTwo * 1000)
-setTimeout(function () {
-    circleTwo.style.opacity = 1
-}, 1500)
-circleTwo.addEventListener("mouseover", function () {
-    circleTwo.style.background = "#f795c3"
-    circleTwo.style.opacity = 0
-    console.log("hover")
-})
-
-var circleThree = document.createElement("div")
-circleThree.className = "circle"
-topDiv.append(circleThree)
-var randomPercentRightThree = (Math.random() * 90) + 5
-circleThree.setAttribute("style", `right: ${randomPercentRightThree}%`)
-circleThree.style.background = `${randomColorThree}`
-var randomSizeThree = Math.floor(Math.random() * 75) + 18
-circleThree.style.width = randomSizeThree + "px"
-circleThree.style.height = randomSizeThree + "px"
-var randomDurationThree = Math.floor(Math.random() * 14) + 12
-circleThree.style.animationDuration = randomDurationThree + "s"
-setTimeout(function () {
-    circleThree.remove()
-}, randomDurationThree * 1000)
-setTimeout(function () {
-    circleThree.style.opacity = 1
-}, 1500)
-circleThree.addEventListener("mouseover", function () {
-    circleThree.style.background = "#f795c3"
-    circleThree.style.opacity = 0
-    console.log("hover")
-})
-
-
-var circleFour = document.createElement("div")
-circleFour.className = "circle"
-topDiv.append(circleFour)
-var randomPercentRightFour = (Math.random() * 90) + 5
-circleFour.setAttribute("style", `right: ${randomPercentRightFour}%`)
-circleFour.style.background = `${randomColorFour}`
-var randomSizeFour = Math.floor(Math.random() * 75) + 18
-circleFour.style.width = randomSizeFour + "px"
-circleFour.style.height = randomSizeFour + "px"
-var randomDurationFour = Math.floor(Math.random() * 14) + 12
-circleFour.style.animationDuration = randomDurationFour + "s"
-setTimeout(function () {
-    circleFour.remove()
-}, randomDurationFour * 1000)
-setTimeout(function () {
-    circleFour.style.opacity = 1
-}, 1500)
-circleFour.addEventListener("mouseover", function () {
-    circleFour.style.background = "#f795c3"
-    circleFour.style.opacity = 0
-    console.log("hover")
-})
-
-var circleFive = document.createElement("div")
-circleFive.className = "circle"
-topDiv.append(circleFive)
-var randomPercentRightFive = (Math.random() * 90) + 5
-circleFive.setAttribute("style", `right: ${randomPercentRightFive}%`)
-circleFive.style.background = `${randomColorFive}`
-var randomSizeFive = Math.floor(Math.random() * 75) + 18
-circleFive.style.width = randomSizeFive + "px"
-circleFive.style.height = randomSizeFive + "px"
-var randomDurationFive = Math.floor(Math.random() * 14) + 12
-circleFive.style.animationDuration = randomDurationFive + "s"
-setTimeout(function () {
-    circleFive.remove()
-}, randomDurationFive * 1000)
-setTimeout(function () {
-    circleFive.style.opacity = 1
-}, 1500)
-circleFive.addEventListener("mouseover", function () {
-    circleFive.style.background = "#f795c3"
-    circleFive.style.opacity = 0
-    console.log("hover")
-})
-
-
-var circleSix = document.createElement("div")
-circleSix.className = "circle"
-topDiv.append(circleSix)
-var randomPercentRightSix = (Math.random() * 90) + 5
-circleSix.setAttribute("style", `right: ${randomPercentRightSix}%`)
-circleSix.style.background = `${randomColorSix}`
-var randomSizeSix = Math.floor(Math.random() * 75) + 18
-circleSix.style.width = randomSizeSix + "px"
-circleSix.style.height = randomSizeSix + "px"
-var randomDurationSix = Math.floor(Math.random() * 14) + 12
-circleSix.style.animationDuration = randomDurationSix + "s"
-setTimeout(function () {
-    circleSix.remove()
-}, randomDurationSix * 1000)
-setTimeout(function () {
-    circleSix.style.opacity = 1
-}, 1500)
-circleSix.addEventListener("mouseover", function () {
-    circleSix.style.background = "#f795c3"
-    circleSix.style.opacity = 0
-    console.log("hover")
-})
+var numsOfCircles = [1, 2, 3, 4, 5]
 
 
 
 
 
-setInterval(function () {
-    var circleOne = document.createElement("div")
-    circleOne.className = "circle"
-    topDiv.append(circleOne)
-    var randomPercentRightTwo = (Math.random() * 90) + 5
-    circleOne.setAttribute("style", `right: ${randomPercentRightTwo}%`)
+
+startCycle()
+function startCycle() {
+    numsOfCircles.forEach(createCircle)
+}
+
+
+
+function createCircle() {
+    var circle = document.createElement("div")
+    circle.className = "circle"
+    topDiv.append(circle)
     var randomColor = colorArray[Math.floor(Math.random() * 7)]
-    circleOne.style.background = `${randomColor}`
+    var randomPercentRight = (Math.random() * 90) + 5
+    circle.setAttribute("style", `right: ${randomPercentRight}%`)
+    circle.style.background = `${randomColor}`
     var randomSize = Math.floor(Math.random() * 75) + 18
-    circleOne.style.width = randomSize + "px"
-    circleOne.style.height = randomSize + "px"
+    circle.style.width = randomSize + "px"
+    circle.style.height = randomSize + "px"
     var randomDuration = Math.floor(Math.random() * 14) + 12
-    circleOne.style.animationDuration = randomDuration + "s"
+    // console.log(randomDuration)
+    circle.style.animationDuration = randomDuration + "s"
     setTimeout(function () {
-        circleOne.remove()
+        circle.remove()
     }, randomDuration * 1000)
     setTimeout(function () {
-        circleOne.style.opacity = 1
+        circle.style.opacity = 1
     }, 1500)
-    circleOne.addEventListener("mouseover", function () {
-        circleOne.style.background = "#f795c3"
-        circleOne.style.opacity = 0
+    circle.addEventListener("mouseover", function () {
+        circle.style.background = "#f795c3"
+        circle.style.opacity = 0
+        console.log("hover")
     })
-}, 2000)
-
-
+    setInterval(function () {
+        circle.style.background = colorArray[Math.floor(Math.random() * 7)]
+    }, 1500)
+}
 
 setInterval(function () {
-    var circleTwo = document.createElement("div")
-    circleTwo.className = "circle"
-    topDiv.append(circleTwo)
-    var randomPercentRightTwo = (Math.random() * 90) + 5
-    circleTwo.setAttribute("style", `right: ${randomPercentRightTwo}%`)
-    var randomColor = colorArray[Math.floor(Math.random() * 7)]
-    circleTwo.style.background = `${randomColor}`
-    var randomSizeTwo = Math.floor(Math.random() * 75) + 18
-    circleTwo.style.width = randomSizeTwo + "px"
-    circleTwo.style.height = randomSizeTwo + "px"
-    var randomDurationTwo = Math.floor(Math.random() * 14) + 12
-    circleTwo.style.animationDuration = randomDurationTwo + "s"
-    setTimeout(function () {
-        circleTwo.remove()
-    }, randomDurationTwo * 1000)
-    setTimeout(function () {
-        circleTwo.style.opacity = 1
-    }, 1500)
-    circleTwo.addEventListener("mouseover", function () {
-        circleTwo.style.background = "#f795c3"
-        circleTwo.style.opacity = 0
-    })
+    startCycle()
 }, 2000)
-
-setInterval(function () {
-    var circleTwo = document.createElement("div")
-    circleTwo.className = "circle"
-    topDiv.append(circleTwo)
-    var randomPercentRightTwo = (Math.random() * 90) + 5
-    circleTwo.setAttribute("style", `right: ${randomPercentRightTwo}%`)
-    var randomColor = colorArray[Math.floor(Math.random() * 7)]
-    circleTwo.style.background = `${randomColor}`
-    var randomSizeTwo = Math.floor(Math.random() * 75) + 18
-    circleTwo.style.width = randomSizeTwo + "px"
-    circleTwo.style.height = randomSizeTwo + "px"
-    var randomDurationTwo = Math.floor(Math.random() * 14) + 12
-    circleTwo.style.animationDuration = randomDurationTwo + "s"
-    setTimeout(function () {
-        circleTwo.remove()
-    }, randomDurationTwo * 1000)
-    setTimeout(function () {
-        circleTwo.style.opacity = 1
-    }, 1500)
-    circleTwo.addEventListener("mouseover", function () {
-        circleTwo.style.background = "#f795c3"
-        circleTwo.style.opacity = 0
-    })
-}, 2000)
-
-setInterval(function () {
-    var circleTwo = document.createElement("div")
-    circleTwo.className = "circle"
-    topDiv.append(circleTwo)
-    var randomPercentRightTwo = (Math.random() * 90) + 5
-    circleTwo.setAttribute("style", `right: ${randomPercentRightTwo}%`)
-    var randomColor = colorArray[Math.floor(Math.random() * 7)]
-    circleTwo.style.background = `${randomColor}`
-    var randomSizeTwo = Math.floor(Math.random() * 75) + 18
-    circleTwo.style.width = randomSizeTwo + "px"
-    circleTwo.style.height = randomSizeTwo + "px"
-    var randomDurationTwo = Math.floor(Math.random() * 14) + 12
-    circleTwo.style.animationDuration = randomDurationTwo + "s"
-    setTimeout(function () {
-        circleTwo.remove()
-    }, randomDurationTwo * 1000)
-    setTimeout(function () {
-        circleTwo.style.opacity = 1
-    }, 1500)
-    circleTwo.addEventListener("mouseover", function () {
-        circleTwo.style.background = "#f795c3"
-        circleTwo.style.opacity = 0
-    })
-}, 2000)
-
-
 
 

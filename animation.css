@@ -55,27 +55,27 @@
     opacity: 100%!important;
 }
 
-.sDOne {
+.sD1 {
     opacity: 100%!important;
     transition: 1.5s;
 }
 
-.sDTwo {
+.sD2 {
     opacity: 100%!important;
     transition: 2s;
 }
 
-.sDThree {
+.sD3 {
     opacity: 100%!important;
     transition: 2.5s;
 }
 
-.sDFour {
+.sD4 {
     opacity: 100%!important;
     transition: 3s;
 }
 
-.sDFive {
+.sD5 {
     opacity: 100%!important;
     transition: 3.5s;
 }

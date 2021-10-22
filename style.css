@@ -109,7 +109,7 @@ li{
     background-color: rgb(59, 59, 59);
     display: flex;
     align-items: center;
-    height: 7.6vh;
+    height: 6.6vh;
     z-index: 100;
     /* position: relative; */
 }
@@ -122,14 +122,26 @@ li{
     z-index: 4;
 }
 
+
+.navLink{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .navButton{
-    display: inline;
+
     color: white;
     transition: 0.2s;
-    padding: 2.2vh;
+    padding: 0.1vh 2vh 0.1vh 2vh;
     box-sizing: border-box;
-    height: 100%;
+    /* height: 100%; */
     border-radius: 10%;
+    height: 100%;
+    /* line-height: 100%; */
+    display: flex;
+    align-items: center;
+
 }
 
 .navButton:hover{
@@ -137,9 +149,11 @@ li{
     color: black;
 }
 
+
+
 .navButtonSection{
     background-color: #6acfd4;
-    color: black;
+    color: black !important;
 }
 
 
@@ -176,6 +190,7 @@ li{
 
 .resume:hover{
     color: #7affa2;
+    background: none;
 }
 
 #ghIcon{
@@ -209,7 +224,7 @@ li{
  }
  
  #linkedInIcon:hover{
-    background: #fd97be;;
+    background: #fd8383;
  }
 
 
@@ -658,7 +673,7 @@ li{
 }
 
 
-#modal1, #modal2, #modal3, #modal4, #modal5{
+.modal{
     overflow: auto;
     display: none;
     position: fixed;
@@ -721,7 +736,7 @@ li{
     margin-top: 0.5%;
 }
 
-.photo, .photo2, .photo3, .photo4, .photo5{
+.photo1, .photo2, .photo3, .photo4, .photo5{
     z-index: 100;
     display: none;
     box-sizing: border-box;  
@@ -745,7 +760,7 @@ li{
     display: none;
 }
 
-#xIcon, #xIcon2, #xIcon3, #xIcon4, #xIcon5 {
+.xIcon {
     color: white;
     background-color: rgba(44, 44, 44, 0.76);
     margin: 0%;
@@ -759,7 +774,7 @@ li{
     border-radius: 5px;
 }
 
-#xIcon:hover, #xIcon2:hover, #xIcon3:hover, #xIcon4:hover, #xIcon5:hover{
+.xIcon:hover{
     color: black;
     background-color: rgb(110, 109, 109);
 }
@@ -776,16 +791,18 @@ li{
     cursor: pointer;
 }
 
-#leftArrow:hover, #rightArrow:hover, #leftArrow2:hover, #rightArrow2:hover, #leftArrow3:hover, #rightArrow3:hover, #leftArrow4:hover, #rightArrow4:hover #leftArrow5:hover, #rightArrow5:hover{
+.arrows:hover{
     color: rgba(255, 255, 255, 0.863);
     background-color: rgb(43, 43, 43);
 }
 
-#leftArrow, #leftArrow2, #leftArrow3, #leftArrow4, #leftArrow5{
+
+
+#leftArrow1, #leftArrow2, #leftArrow3, #leftArrow4, #leftArrow5{
     left: 8px;
 }
 
-#rightArrow, #rightArrow2, #rightArrow3, #rightArrow4, #rightArrow5{
+#rightArrow1, #rightArrow2, #rightArrow3, #rightArrow4, #rightArrow5{
     right: 8px;
 }
 
@@ -876,7 +893,7 @@ li{
 }
 
 .resume2:hover{
-    background-color: #67fd94;
+    background-color: #55f083;
     color: black;
 }
 
@@ -1039,7 +1056,7 @@ li{
  }
 
  #linkedInIcon2:hover{
-    background: #fd97be;
+    background: #fd8383;
 }
 
 .floatLeft{
@@ -1103,12 +1120,11 @@ li{
     #navBar{
         width: 100%;
         background-color: rgb(59, 59, 59);
-        display: inline-block;
         text-align: center;
         height: fit-content;
-        padding-top: 2vh;
-        padding-bottom: 2vh;
-        vertical-align:middle
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
+        /* vertical-align:middle */
         /* position: relative; */
     }
 
@@ -1116,7 +1132,7 @@ li{
         display: inline;
         color: white;
         transition: 0.2s;
-        padding: 0.5vh;
+        padding: 1vh;
         /* border-radius: 20%; */
     }
 
@@ -1340,7 +1356,7 @@ li{
         top: 30%;
     }
 
-    #xIcon, #xIcon2, #xIcon3, #xIcon4, #xIcon5 {
+    .xIcon{
         color: white;
         background-color: rgb(0, 0, 0);
         margin: 0%;
