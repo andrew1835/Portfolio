@@ -1066,9 +1066,7 @@ li{
 }
 
 @media only screen and (max-width: 1000px){
-    .resume{
-        display: none;
-       }
+
    
        #ghIcon{
         display: none;
@@ -1081,6 +1079,19 @@ li{
 }
 
 @media only screen and (max-width: 768px) {
+
+    .resume{
+        display: none !important;
+    }
+
+    .notMain{
+        margin-left: 0 !important;
+    }
+
+    #homeButton{
+        display: none !important;
+    }
+
     #topDiv{
         height: 100vh
     }
@@ -1103,6 +1114,29 @@ li{
         margin-top: 2vh;
     }
 
+    .navLink{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navButton{
+    
+        color: white;
+        transition: 0.2s;
+        box-sizing: border-box;
+        /* height: 100%; */
+        border-radius: 10%;
+        height: 100%;
+        /* line-height: 100%; */
+        display: flex;
+        align-items: center;
+        transition: 0.2s;
+        margin-top: 0;
+        margin-bottom: 0;
+    
+    }
+
     /* #list{
         margin-bottom: 14vh;
     } */
@@ -1122,23 +1156,22 @@ li{
         background-color: rgb(59, 59, 59);
         text-align: center;
         height: fit-content;
-        padding-top: 1.5vh;
-        padding-bottom: 1.5vh;
+        height: 64px;
+        /* padding-top: 1.5vh;
+        padding-bottom: 1.5vh; */
+        justify-content: space-evenly;
         /* vertical-align:middle */
         /* position: relative; */
     }
 
-    .navButton{
+    /* .navButton{
         display: inline;
         color: white;
         transition: 0.2s;
         padding: 1vh;
         /* border-radius: 20%; */
-    }
+    } */
 
-    #homeButton{
-        margin-left: 2vw;
-    }
     
 
     /* .resume{
@@ -1483,4 +1516,4 @@ li{
         font-size: small;
     }
     
-  }
+  
