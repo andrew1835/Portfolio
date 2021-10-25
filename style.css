@@ -1141,6 +1141,16 @@ li{
         margin-bottom: 14vh;
     } */
 
+    .navButton:hover{
+        background-color: transparent;
+        color: white ;
+    }
+
+    .navButtonSection{
+        background-color: #6acfd4 !important;
+        color: black !important;
+    }
+
     .listItems{
         border: 1px solid;
         width: 40vw;
